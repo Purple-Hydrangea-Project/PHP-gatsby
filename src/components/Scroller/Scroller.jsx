@@ -1,5 +1,5 @@
 import React from "react"
-import "./Scroller.css"
+import "./Scroller.scss"
 
 const Scroller = () => (
   <div class="arrow">
