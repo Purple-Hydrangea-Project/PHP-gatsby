@@ -1,0 +1,47 @@
+@import "./../main.scss";
+
+.footer {
+    background: $primary-purple;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .col {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        padding: 50px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .first {
+        font-size: 27px;
+    }
+
+    .second {
+        .logo {
+            width: 95px;
+        }
+        .title {
+            font-weight: bold;
+            font-size: 31px;
+        }
+        .connect {
+            font-size: 27px;
+        }
+    }
+    
+
+    .third {
+        .title {
+            font-weight: bold;
+            font-size: 27px;
+        }
+        .contact {
+            text-align: left;
+        }
+    }
+}
