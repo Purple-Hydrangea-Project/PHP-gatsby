@@ -1,6 +1,8 @@
 import React from "react"
 import "./Footer.scss"
 
+import { Socials } from '../Socials';
+
 import Logo from '../../../static/circle_logo.png'
 
 const Footer = () => (
@@ -14,6 +16,7 @@ is a 501(c)(3) nonprofit organization dedicated to raising mental health awarene
             <img src={Logo} alt="The Purple Hydrangea Project" className="logo" />
             <p className="title">The Purple Hydrangea Project</p>
             <p className="connect">Connect with Us</p>
+            <Socials />
         </div>
         <div className="col third">
             <p className="title">Contact Us</p>
