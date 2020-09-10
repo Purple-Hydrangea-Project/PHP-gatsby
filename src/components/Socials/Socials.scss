@@ -1,0 +1,28 @@
+@import "./../main.scss";
+
+.socials {
+    width: 100%;
+
+    .fa {
+        padding: 10px;
+        font-size: 25px;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 10px;
+        border: 2px solid white;
+        border-radius: 50%;
+        color: white;
+    }
+    
+    .fa:hover {
+        opacity: 0.7;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .email {
+        font-size: 18px;
+    }
+}

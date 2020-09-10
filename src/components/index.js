@@ -3,6 +3,7 @@ import Header from "./Header"
 import Landing from "./Landing"
 import Scroller from "./Scroller"
 import Footer from "./Footer"
+import Socials from "./Socials"
 
 export {
     Button,
@@ -10,4 +11,5 @@ export {
     Landing,
     Scroller,
     Footer,
+    Socials,
 }
