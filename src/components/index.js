@@ -1,9 +1,9 @@
-import Button from "./Button"
-import Header from "./Header"
-import Landing from "./Landing"
-import Scroller from "./Scroller"
-import Footer from "./Footer"
-import Socials from "./Socials"
+import { Button } from "./Button"
+import { Header } from "./Header"
+import { Landing } from "./Landing"
+import { Scroller } from "./Scroller"
+import { Footer } from "./Footer"
+import { Socials } from "./Socials"
 
 export {
     Button,
