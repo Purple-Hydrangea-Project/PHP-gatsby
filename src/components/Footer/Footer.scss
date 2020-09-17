@@ -13,6 +13,8 @@
         align-content: center;
         align-items: center;
         padding: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         flex-direction: column;
         text-align: center;
     }
@@ -28,6 +30,7 @@
         .title {
             font-weight: bold;
             font-size: 31px;
+            margin-botom: 0px;
         }
         .connect {
             font-size: 27px;

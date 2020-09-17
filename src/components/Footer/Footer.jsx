@@ -8,9 +8,8 @@ import Logo from '../../../static/circle_logo.png'
 const Footer = () => (
     <div className="footer">
         <div className="col first">
-            <p>
-                The Purple Hydrangea Project
-is a 501(c)(3) nonprofit organization dedicated to raising mental health awareness in children and teens.</p>
+            The Purple Hydrangea Project
+is a 501(c)(3) nonprofit organization dedicated to raising mental health awareness in children and teens.
         </div>
         <div className="col second">
             <img src={Logo} alt="The Purple Hydrangea Project" className="logo" />
