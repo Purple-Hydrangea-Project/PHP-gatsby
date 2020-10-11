@@ -2,16 +2,16 @@
 
 .arrow {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 85%;
+    left: 51%;
     transform: translate(-50%, -50%);
   }
   .arrow span {
     display: block;
     width: 20px;
     height: 20px;
-    border-bottom: 5px solid black;
-    border-right: 5px solid black;
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
     transform: rotate(45deg);
     margin: -10px;
     animation: animate 2s infinite;

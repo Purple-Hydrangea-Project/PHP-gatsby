@@ -1,8 +1,9 @@
 import React from "react"
-import { Footer } from '../components';
+import { Footer, Landing } from '../components';
 
 export default function Home() {
-  return <div>Hello world!
+  return <div>
+    <Landing />
     <Footer />
   </div>
 }
