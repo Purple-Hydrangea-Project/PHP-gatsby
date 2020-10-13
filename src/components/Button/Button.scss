@@ -1,3 +1,24 @@
-@import "./../main.scss"
+@import "./../main.scss";
 
-// styles go here
+.button {
+  border-radius: 14px;
+  color: #000;
+  max-width: 50%;
+  margin: 50px;
+  font-weight: bold;
+  text-align: center;
+
+  &.medium {
+    padding: 18px;
+    font-size: 28px;
+    background-color: #CDCDFF;
+    width: 250px;
+  }
+
+  &.donate {
+    padding: 13px;
+    font-size: 27px;
+    background-color: #9791E1;
+    width: 250px;
+  }
+}

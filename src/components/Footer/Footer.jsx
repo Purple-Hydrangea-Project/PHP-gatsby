@@ -1,13 +1,14 @@
 import React from "react"
 import "./Footer.scss"
 
-import { Socials } from '../Socials';
+import { Socials, Button } from '../index';
 
 import Logo from '../../../static/circle_logo.png'
 
 const Footer = () => (
     <div className="footer">
         <div className="col first">
+            <Button text="donate" size="donate" />
             The Purple Hydrangea Project
 is a 501(c)(3) nonprofit organization dedicated to raising mental health awareness in children and teens.
         </div>
