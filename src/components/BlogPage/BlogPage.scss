@@ -1,0 +1,74 @@
+@import "./../main.scss";
+@import url("https://use.typekit.net/upg4lus.css");
+
+
+.blogpage {
+  font-family: "Montserrat", sans-serif;
+  margin: auto;
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+
+  .green-box{
+    background-color:$pale-green;
+    width: 90%;
+    margin: 5% 2%;
+    vertical-align: center;
+    display: inline-flex;
+    padding: 2%;
+    max-width: 720px;
+    min-width: 320px;
+  
+  }
+  
+  .post{
+    background-color: $white;
+    width: 90%;
+    margin: auto;
+    padding: 5%;
+  
+    .post-footer{
+      border-bottom: 1px solid $white;
+      border-top: 1px solid $white;
+      padding: 1%;
+      margin: 5% 0 2% 0;
+      display: inline-flex;
+      width: 98%;
+  
+      .likes{
+        text-align: right;
+        width: 60%;
+      }
+      
+      .socials{
+        width:40%;
+        .icon{
+          text-decoration: none;
+          color: black;
+          
+        }
+      }
+  
+    }
+  }
+  
+}
+
+
+
+
+h4{
+  font-weight: normal;
+  font-style: italic;
+}
+
+h6{
+  font-weight: lighter;
+}
+
+img{
+  width: 16px;
+}
+
+
+
