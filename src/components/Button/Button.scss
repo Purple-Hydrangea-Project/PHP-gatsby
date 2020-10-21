@@ -1,18 +1,24 @@
 @import "./../main.scss";
+@import "./../mixins.scss";
 
 .button {
   border-radius: 14px;
   color: #000;
-  max-width: 50%;
+  // max-width: 50%;
   margin: 50px;
   font-weight: bold;
   text-align: center;
 
-  &.medium {
+  &.default {
     padding: 18px;
     font-size: 28px;
     background-color: #CDCDFF;
     width: 250px;
+    @include respond(sm) {
+      padding: 12px;
+      font-size: 22px;
+      width: 100px;
+    }
   }
 
   &.donate {

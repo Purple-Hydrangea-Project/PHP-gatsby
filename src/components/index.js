@@ -4,6 +4,7 @@ import { Landing } from "./Landing"
 import { Scroller } from "./Scroller"
 import { Footer } from "./Footer"
 import { Socials } from "./Socials"
+import { BlogPage }  from "./BlogPage"
 
 export {
     Button,
@@ -12,4 +13,5 @@ export {
     Scroller,
     Footer,
     Socials,
+    BlogPage,
 }
