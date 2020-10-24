@@ -2,14 +2,18 @@ import React from "react"
 import "./BlogPage.scss"
 
 import { Socials, Button } from '../index';
-import { BlogPage } from ".";
-
 
 import Heart from '../../../static/heart-thin.svg'
 
 
-const BlogPage = () => (
-    <div class="blogpage">
+
+
+export default class BlogPage extends React.Component {
+    render() {
+      //const {author, date, blogtext, blogtitle, ...props} = this.props
+    
+    return(
+      <div class="blogpage">
         <div class="green-box">
             <div class="post">
                 <div class="post-content">
@@ -22,10 +26,7 @@ const BlogPage = () => (
                 <div class="post-footer">
                 <div class="socials">
                 
-                    <a href="#" class="fa fa-facebook icon"></a>
-                    <a href="#" class="fa fa-twitter icon"></a>
-                    <a href="#" class="fa fa-instagram icon"></a>
-                    <a href="#" class="fa fa-link icon"></a>
+                    <Socials />
 
                 </div>
                 
@@ -36,13 +37,6 @@ const BlogPage = () => (
             </div>
             </div>
     </div>
-
-
-);
-export default BlogPage
-
-export default class BlogPage extends React.Component {
-    render() {
-      const {author, date, blogtext, blogtitle, ...props} = this.props
-    }
+    )
   }
+}

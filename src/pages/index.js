@@ -6,8 +6,6 @@ export default function Home() {
   return (
   <div>
     <Landing />
-    <Button text="hello" link="/" size="medium" />
-    <Footer />
   </div>
   )
 }
