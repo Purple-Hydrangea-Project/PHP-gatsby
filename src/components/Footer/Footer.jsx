@@ -1,8 +1,6 @@
 import React from "react"
 import "./Footer.scss"
-
-import { Socials, Button } from '../index';
-
+import { Socials, Button } from '../../components'
 import Logo from '../../../static/circle_logo.png'
 
 const Footer = () => (
