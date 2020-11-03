@@ -1,6 +1,6 @@
 import React from "react"
 import "../components/main.scss"
-import { Footer, Landing, Button, Card } from '../components';
+import { Footer, Landing, Button, Card, BlogPage } from '../components';
 import Logo from '../../static/circle_logo.png'
 
 export default function Home() {

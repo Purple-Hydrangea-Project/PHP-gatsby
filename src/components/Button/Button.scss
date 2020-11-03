@@ -1,5 +1,4 @@
 @import "./../main.scss";
-@import "./../mixins.scss";
 
 .button {
   border-radius: 14px;
@@ -15,9 +14,9 @@
     background-color: #CDCDFF;
     width: 250px;
     @include respond(sm) {
-      padding: 12px;
-      font-size: 22px;
-      width: 100px;
+      padding: 10px;
+      font-size: 24px;
+      width: 200px;
     }
   }
 
@@ -26,5 +25,10 @@
     font-size: 27px;
     background-color: #9791E1;
     width: 250px;
+    @include respond(sm) {
+      padding: 8px;
+      font-size: 18px;
+      width: 140px;
+    }
   }
 }
