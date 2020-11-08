@@ -82,3 +82,8 @@ body {
     clear: both;
   }
 }
+
+.blogcards{
+  display: inline-flex;
+  flex-wrap: wrap;
+}

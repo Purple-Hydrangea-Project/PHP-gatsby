@@ -1,6 +1,6 @@
 import React from "react"
 import "../components/main.scss"
-import { Footer, Landing, Button, Card, BlogPage } from '../components';
+import { Footer, Landing, Button, Card, BlogPage, BlogCard } from '../components';
 import Logo from '../../static/circle_logo.png'
 
 export default function Home() {
@@ -15,6 +15,11 @@ export default function Home() {
         <Card title="Anna Zhang" text="she is a person" />
       </div>
       <Footer />
+
+      <div class="blogcards">
+        <BlogCard image="" title="title" author="author" date="date" likes="50" excerpt="excerpt" />
+        <BlogCard image="" title="title" author="author" date="date" likes="50" excerpt="excerpt" />
+      </div>
     </div>
   )
 }
