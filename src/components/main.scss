@@ -16,6 +16,7 @@ $accent-text-purple: #7D78BE;
 $dark-text-purple: #181143;
 $pale-green: #8CC6C3;
 $white: #fff;
+$light-purple: #F1F1FC;
 
 //Grids
 
@@ -31,6 +32,17 @@ body {
 .section {
   margin-left: 10%;
   margin-right: 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.my-container {
   display: flex;
 }
 

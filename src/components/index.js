@@ -6,6 +6,7 @@ import { Footer } from "./Footer"
 import { Socials } from "./Socials"
 import { BlogPage } from "./BlogPage"
 import { Card } from "./Card"
+import { Counter } from "./Counter"
 
 export {
     Button,
@@ -16,4 +17,5 @@ export {
     Socials,
     BlogPage,
     Card,
+    Counter,
 }

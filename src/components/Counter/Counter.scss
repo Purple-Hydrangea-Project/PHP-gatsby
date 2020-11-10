@@ -1,0 +1,28 @@
+@import "./../main.scss";
+
+.counter {
+    background: $light-purple;
+    margin: 60px;
+    justify-content: space-around;
+    padding: 30px;
+    flex-direction: row;
+
+    .number-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 20px;
+        justify-content: space-between;
+
+        .number {
+            font-size: 100px;
+            font-weight: 500;
+            margin:0px;
+        }
+
+        .label {
+            color: $landing-purple;
+            font-size: 20px;
+        }
+    }
+}
