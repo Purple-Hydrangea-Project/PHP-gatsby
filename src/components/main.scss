@@ -1,51 +1,5 @@
 @import url("https://use.typekit.net/upg4lus.css");
 
-//Fonts
-$montserrat: "Montserrat", sans-serif;
-
-//Colors
-// $coral: #ff534f;
-// $neon: #363fff;
-// $slate: #082a44;
-// $mustard: #fcb14b;
-// $teal: #00b8b9;
-// $violet: #452081;
-$primary-purple: #ABA7DD;
-$landing-purple: #514B91;
-$accent-text-purple: #7D78BE;
-$dark-text-purple: #181143;
-$pale-green: #8CC6C3;
-$white: #fff;
-$light-purple: #F1F1FC;
-
-//Grids
-
-//Styles
-body {
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
-  font-family: $montserrat;
-  margin: 0;
-}
-
-.section {
-  margin-left: 10%;
-  margin-right: 10%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-}
-
-.my-container {
-  display: flex;
-}
-
 //Mixins
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
@@ -93,4 +47,55 @@ body {
     display: table;
     clear: both;
   }
+}
+
+//Fonts
+$montserrat: "Montserrat", sans-serif;
+
+//Colors
+// $coral: #ff534f;
+// $neon: #363fff;
+// $slate: #082a44;
+// $mustard: #fcb14b;
+// $teal: #00b8b9;
+// $violet: #452081;
+$primary-purple: #ABA7DD;
+$landing-purple: #514B91;
+$accent-text-purple: #7D78BE;
+$dark-text-purple: #181143;
+$pale-green: #8CC6C3;
+$dark-green: #348581;
+$white: #fff;
+$light-purple: #F1F1FC;
+
+//Grids
+
+//Styles
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  font-family: $montserrat;
+  margin: 0;
+}
+.section {
+  margin: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
+}
+
+.my-container {
+  display: flex;
 }
