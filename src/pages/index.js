@@ -23,8 +23,8 @@ export default function Home() {
   return (
     <div>
       <Landing />
-      <Button text="hello" link="/" size="medium" />
-      <BlogPage />
+      <Button text="hello" link="/blogpage" size="default" />
+      {/* <BlogPage /> */}
       <div className="section row">
         <Card img={Logo} title="Anna Zhang" text="she is a person" />
         <Card title="Anna Zhang" text="she is a person" />
@@ -33,5 +33,5 @@ export default function Home() {
       <Counter values={counterValues} duration={2000} />
       <Footer />
     </div>
-  )
+  );
 }

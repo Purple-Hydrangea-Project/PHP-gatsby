@@ -20,10 +20,13 @@ is a 501(c)(3) nonprofit organization dedicated to raising mental health awarene
             <p className="title">Contact Us</p>
             <div className="contact">
                 <p>Email: purplehydrangeaproject@gmail.com</p>
-                <p>Phone: (909)569-4214</p>
+                <p>Phone: (909) 569-4214</p>
                 <p>Registered Charity EIN: 83-4419271</p>
             </div>
-
+            <div className="newsletter">
+                <p>Subscribe to our newsletter</p>
+                <input placeholder="Email Address"></input>
+            </div>
         </div>
     </div>
 )

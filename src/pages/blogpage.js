@@ -1,7 +1,8 @@
 import React from "react"
-import { Footer, Button, BlogPage } from '../components';
+// import { useStaticQuery, graphql, Link } from "gatsby"
+import { Footer, BlogPage } from '../components';
 
-export default function Home() {
+export default function Blog() {
   return (
   <div>
 

@@ -7,7 +7,6 @@ import Heart from '../../../static/heart-thin.svg'
 export default class BlogPage extends React.Component {
     render() {
       //const {author, date, blogtext, blogtitle, ...props} = this.props
-    
     return(
       <div class="blogpage">
         <div class="green-box">
