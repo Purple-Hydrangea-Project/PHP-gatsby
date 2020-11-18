@@ -5,9 +5,9 @@ import { Scroller } from "./Scroller"
 import { Socials } from "./Socials"
 import { BlogPage } from "./BlogPage"
 import { Card } from "./Card"
-import { BlogCard } from "./Card"
-import { Footer } from "./Card"
-import { Counter } from "./Card"
+import { BlogCard } from "./BlogCard"
+import { Footer } from "./Footer"
+import { Counter } from "./Counter"
 
 
 export {
@@ -18,10 +18,7 @@ export {
     Socials,
     BlogPage,
     Card,
-<<<<<<< HEAD
     BlogCard,
-    Footer
-=======
-    Counter,
->>>>>>> ebf38479775ef63b2f9ab5888fad3f852b31a820
+    Footer,
+    Counter
 }

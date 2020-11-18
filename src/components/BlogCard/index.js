@@ -1,9 +1,3 @@
-<<<<<<< Updated upstream
-import BlogCard from "./Card"
+import BlogCard from "./BlogCard"
 
 export { BlogCard }
-=======
-import Card from "./Card"
-
-export { Card }
->>>>>>> Stashed changes
