@@ -7,6 +7,7 @@ import { BlogPage } from "./BlogPage"
 import { Card } from "./Card"
 import { BlogCard } from "./Card"
 import { Footer } from "./Card"
+import { Counter } from "./Card"
 
 
 export {
@@ -17,6 +18,10 @@ export {
     Socials,
     BlogPage,
     Card,
+<<<<<<< HEAD
     BlogCard,
     Footer
+=======
+    Counter,
+>>>>>>> ebf38479775ef63b2f9ab5888fad3f852b31a820
 }

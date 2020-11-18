@@ -5,19 +5,23 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    @include respond(tab-port) {
+        flex-direction: column;
+    }
 
     .col {
-        width: 30%;
+        width: 30vw;
         display: flex;
         justify-content: center;
         align-content: center;
         align-items: center;
-        padding: 20px 50px;
+        padding: 1.389vw 2.778vw;
         flex-direction: column;
         text-align: center;
-        @include respond(sm) {
+        @include respond(tab-port) {
             display: block;
-            padding: 35px;
+            width: auto;
+            padding: 6.400vw;
         }
     }
 
@@ -47,6 +51,25 @@
         }
         .contact {
             text-align: left;
+        }
+        .newsletter {
+            background-color: $dark-green;
+            color: #fff;
+            margin: 0;
+            padding: 0.972vw;
+            @include respond(tab-port) {
+                width: auto;
+                padding: 3.733vw;
+            }
+            input {
+                font-family: $montserrat;
+                width: 100%;
+                background-color: $pale-green;
+                border: none;
+            }
+            p {
+                margin: 0.972vw;
+            }
         }
     }
 }

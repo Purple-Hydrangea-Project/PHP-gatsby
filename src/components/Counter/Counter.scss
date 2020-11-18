@@ -1,0 +1,38 @@
+@import "./../main.scss";
+
+.counter {
+    background: $light-purple;
+    margin: 3.819vw;
+    justify-content: space-around;
+    padding: 3.333vw;
+    flex-direction: row;
+    @include respond(tab-port) {
+        margin: 6.933vw;
+        flex-direction: column;
+    }
+
+    .number-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 2.083vw;
+        justify-content: space-between;
+
+        .number {
+            font-size: 10vw;
+            font-weight: 500;
+            margin: 0;
+            @include respond(tab-port) {
+                font-size: 21.333vw;
+            }
+        }
+
+        .label {
+            color: $landing-purple;
+            font-size: 2.500vw;
+            @include respond(tab-port) {
+                font-size: 5.333vw;
+            }
+        }
+    }
+}
