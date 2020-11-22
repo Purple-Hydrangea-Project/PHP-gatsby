@@ -7,6 +7,7 @@ import { Socials } from "./Socials"
 import { BlogPage } from "./BlogPage"
 import { Card } from "./Card"
 import { Counter } from "./Counter"
+import { TextCard } from "./TextCard"
 
 export {
     Button,
@@ -18,4 +19,5 @@ export {
     BlogPage,
     Card,
     Counter,
+    TextCard
 }
