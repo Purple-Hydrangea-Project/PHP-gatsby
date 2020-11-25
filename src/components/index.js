@@ -8,6 +8,7 @@ import { Card } from "./Card"
 import { BlogCard } from "./BlogCard"
 import { Footer } from "./Footer"
 import { Counter } from "./Counter"
+import { TextCard } from "./TextCard"
 
 
 export {
@@ -20,5 +21,6 @@ export {
     Card,
     BlogCard,
     Footer,
-    Counter
+    Counter,
+    TextCard,
 }
