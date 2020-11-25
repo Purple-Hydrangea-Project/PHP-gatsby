@@ -1,6 +1,6 @@
 import React from "react"
 import "../components/main.scss"
-import { Footer, Landing, Button, Card, BlogPage, Counter } from '../components';
+import { Footer, Landing, Button, Card, BlogPage, BlogCard, Counter } from '../components';
 import Logo from '../../static/circle_logo.png'
 
 export default function Home() {
@@ -32,6 +32,11 @@ export default function Home() {
       </div>
       <Counter values={counterValues} duration={2000} />
       <Footer />
+
+      <div class="blogcards">
+        <BlogCard image="{Logo}" title="title" author="author" date="date" likes="50" excerpt="excerpt" />
+        <BlogCard image={Logo} title="title" author="author" date="date" likes="50" excerpt="excerpt" />
+      </div>
     </div>
   );
 }

@@ -1,0 +1,51 @@
+@import "./../main.scss";
+
+
+  
+  .card{  
+    width: 30%;
+    min-width: 200px;
+    max-width: 400px;
+    background-color: #ffffff;
+    margin: 2%;
+    line-height: .1em;
+    text-align: left;
+
+    .img{
+        width: 100%;
+      }
+      
+      .info{
+        padding: 5% 5% 10% 5%;
+    
+        h3{
+            font-weight: normal;
+        }
+    
+        .excerpt{
+            margin: 1.5em 0 0 0;
+            font-style: italic;
+        }
+    
+        .num{
+            font-size: .5em;
+            font-weight: lighter;
+            float:right;
+        
+            .likes{
+                width: 10px;      
+              }
+          }
+      }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
