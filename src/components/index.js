@@ -9,6 +9,7 @@ import { BlogCard } from "./BlogCard"
 import { Footer } from "./Footer"
 import { Counter } from "./Counter"
 import { TextCard } from "./TextCard"
+import { Feature } from "./Feature"
 
 
 export {
@@ -23,4 +24,5 @@ export {
     Footer,
     Counter,
     TextCard,
+    Feature
 }
