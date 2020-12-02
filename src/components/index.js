@@ -9,6 +9,7 @@ import { BlogCard } from "./BlogCard"
 import { Footer } from "./Footer"
 import { Counter } from "./Counter"
 import { TextCard } from "./TextCard"
+import { Feature } from "./Feature"
 import { Accordion } from "./Accordion"
 
 export {
@@ -23,5 +24,6 @@ export {
     Footer,
     Counter,
     TextCard,
+    Feature,
     Accordion,
 }

@@ -1,5 +1,6 @@
 import React from "react"
 import "../components/main.scss"
+import { Footer, Landing, Button, Card, BlogPage, BlogCard, Counter, TextCard, Feature, Accordion } from '../components';
 import { Footer, Landing, Button, Card, BlogPage, BlogCard, Counter, TextCard, Accordion } from '../components';
 import Logo from '../../static/circle_logo.png'
 
@@ -53,8 +54,10 @@ export default function Home() {
 
       <div class="blogcards">
         <BlogCard image="{Logo}" title="title" author="author" date="date" likes="50" excerpt="excerpt" />
-        <BlogCard image={Logo} title="title" author="author" date="date" likes="50" excerpt="excerpt" />
+        <BlogCard image="{Logo}" title="title" author="author" date="date" likes="50" excerpt="excerpt" />
       </div>
+
+      <Feature image="https://iarp.org/wp-content/uploads/2015/04/purple-1.jpg" title="my blog" author="me" date="today" likes="500"/>
     </div>
   );
 }
