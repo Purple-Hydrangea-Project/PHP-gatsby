@@ -10,7 +10,7 @@ import { Footer } from "./Footer"
 import { Counter } from "./Counter"
 import { TextCard } from "./TextCard"
 import { Feature } from "./Feature"
-
+import { Accordion } from "./Accordion"
 
 export {
     Button,
@@ -24,5 +24,6 @@ export {
     Footer,
     Counter,
     TextCard,
-    Feature
+    Feature,
+    Accordion,
 }

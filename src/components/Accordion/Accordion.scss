@@ -1,0 +1,59 @@
+@import "./../main.scss";
+
+.accordion {
+    border: 1px solid #000000;
+    background: #F1F1FC;
+    border-radius: 10px;
+    margin: 3.819vw;
+    padding: 1.333vw;
+
+    .event {
+        .date {
+            width: 20%;
+            margin: 1.819vw;
+            align-items: center;
+            .text {
+                font-size: 75px;
+                margin: 0px;
+            }
+            .mini-text {
+                font-size: 25px;
+                margin: 5px;
+                margin-left: 30px;
+            }
+        }
+
+        .date-specifics {
+            align-items: center;
+            margin: 1.819vw;
+            margin-top: 0px;
+            .text {
+                font-size: 20px;
+                margin: 0px;
+            }
+        }
+        .vl {
+            border-left: 2px solid black;
+            height: 60px;
+          }
+          
+        .description {
+            flex:display;
+            align-items: center;
+            margin-top:0px;
+            margin-left: 1.819vw;
+            width: 80%;
+            font-size:20px
+        }
+
+        .name {
+            display: flex;
+            align-items: center;
+            margin: 1.819vw;
+            .text {
+                font-size: 50px;
+                margin: 0px;
+            }
+        }
+    }
+}
