@@ -9,6 +9,19 @@
   width: 100%;
   justify-content: center;
 
+  h4{
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  h6{
+    font-weight: lighter;
+  }
+  
+  img{
+    width: 16px;
+  }
+
   .green-box{
     background-color:$pale-green;
     width: 90%;
@@ -54,21 +67,6 @@
   
 }
 
-
-
-
-h4{
-  font-weight: normal;
-  font-style: italic;
-}
-
-h6{
-  font-weight: lighter;
-}
-
-img{
-  width: 16px;
-}
 
 
 

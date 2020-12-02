@@ -11,6 +11,7 @@ import { Counter } from "./Counter"
 import { TextCard } from "./TextCard"
 import { Feature } from "./Feature"
 import { Accordion } from "./Accordion"
+import { Navbar } from "./Navbar"
 
 export {
     Button,
@@ -26,4 +27,5 @@ export {
     TextCard,
     Feature,
     Accordion,
+    Navbar,
 }

@@ -1,10 +1,33 @@
-import React from "react"
-import "../components/main.scss"
-import { Footer, Landing, Button, Card, BlogPage, BlogCard, Counter, TextCard, Feature, Accordion } from '../components';
-import { Footer, Landing, Button, Card, BlogPage, BlogCard, Counter, TextCard, Accordion } from '../components';
-import Logo from '../../static/circle_logo.png'
+import React from "react";
+import { useStaticQuery, graphql, Link } from "gatsby";
+import "../components/main.scss";
+import { Footer, Landing, Button, Card, BlogPage, BlogCard, Counter, TextCard, Feature, Accordion, Navbar } from '../components';
+import Logo from '../../static/circle_logo.png';
 
 export default function Home() {
+
+  const data = useStaticQuery(
+    graphql`
+      query {
+        allContentfulTeamMember {
+          edges {
+            node {
+              blurb {
+                blurb
+              }
+              name
+              title
+              image {
+                file {
+                  url
+                }
+              }
+            }
+          }
+        }
+      }
+    `
+  )
 
   const counterValues = [
     {
@@ -38,11 +61,17 @@ export default function Home() {
 
   return (
     <div>
+      <Navbar />
       <Landing />
       <Accordion events={events} />
       <Button text="hello" link="/blogpage" size="default" />
       {/* <BlogPage /> */}
       <div className="section row">
+      {data.allContentfulTeamMember.edges.map(edge => {
+          return (
+            <Card img={edge.node.image.file.url} title={edge.node.name} text={edge.node.blurb.blurb} />
+          )
+        })}
         <Card img={Logo} title="Anna Zhang" text="she is a person" />
         <Card title="Anna Zhang" text="she is a person" />
         <Card title="Anna Zhang" text="she is a person" />
