@@ -12,6 +12,8 @@ import { TextCard } from "./TextCard"
 import { Feature } from "./Feature"
 import { Accordion } from "./Accordion"
 import { Navbar } from "./Navbar"
+import { MiniCarousel } from "./MiniCarousel"
+
 
 export {
     Button,
@@ -28,4 +30,5 @@ export {
     Feature,
     Accordion,
     Navbar,
+    MiniCarousel
 }

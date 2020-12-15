@@ -1,7 +1,7 @@
 import React from "react";
 import { useStaticQuery, graphql, Link } from "gatsby";
 import "../components/main.scss";
-import { Footer, Landing, Button, Card, BlogPage, BlogCard, Counter, TextCard, Feature, Accordion, Navbar } from '../components';
+import { Footer, Landing, Button, Card, BlogPage, BlogCard, Counter, TextCard, Feature, Accordion, Navbar, MiniCarousel } from '../components';
 import Logo from '../../static/circle_logo.png';
 
 export default function Home() {
@@ -59,10 +59,57 @@ export default function Home() {
     },
   ]
 
+  const resource = [
+    {
+      num: 0,
+      name: 'apps',
+      link: 'google',
+      img: 'https://ichef.bbci.co.uk/news/1024/cpsprodpb/151AB/production/_111434468_gettyimages-1143489763.jpg'
+    },
+    {
+      num: 1,
+      name: 'hotlines',
+      link: 'gsdfdsfoogle',
+      img: 'https://ichef.bbci.co.uk/news/1024/cpsprodpb/151AB/production/_111434468_gettyimages-1143489763.jpg'
+    },
+    {
+      num: 2,
+      name: 'blogs',
+      link: 'gsdfdsfoogle',
+      img: 'https://ichef.bbci.co.uk/news/1024/cpsprodpb/151AB/production/_111434468_gettyimages-1143489763.jpg'
+    },
+    {
+      num: 3,
+      name: 'orgs',
+      link: 'gsdfdsfoogle',
+      img: 'https://ichef.bbci.co.uk/news/1024/cpsprodpb/151AB/production/_111434468_gettyimages-1143489763.jpg'
+    },
+    {
+      num: 4,
+      name: 'books',
+      link: 'gsdfdsfoogle',
+      img: 'https://ichef.bbci.co.uk/news/1024/cpsprodpb/151AB/production/_111434468_gettyimages-1143489763.jpg'
+    }
+  ]
+
+  const resources = [
+    {
+      name: 'apps',
+      link: 'google.com',
+      img: {Logo}
+    },
+    {
+      name: 'hotlines',
+      link: 'google.com',
+      img: {Logo}
+    }
+  ]
+
   return (
     <div>
       <Navbar />
       <Landing />
+      <MiniCarousel events={resource} />
       <Accordion events={events} />
       <Button text="hello" link="/blogpage" size="default" />
       {/* <BlogPage /> */}
