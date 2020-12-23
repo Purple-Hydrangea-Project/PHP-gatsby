@@ -12,6 +12,7 @@ import { TextCard } from "./TextCard"
 import { Feature } from "./Feature"
 import { Accordion } from "./Accordion"
 import { Navbar } from "./Navbar"
+import { QuoteBox } from "./QuoteBox"
 
 export {
     Button,
@@ -28,4 +29,5 @@ export {
     Feature,
     Accordion,
     Navbar,
+    QuoteBox,
 }
