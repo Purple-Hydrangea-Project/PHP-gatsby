@@ -2,4 +2,10 @@
     margin-left: 1rem;
     margin-right: 1rem;
     display: block;
+    @include respond(tab-port) {
+        display: block;
+        padding-left: .5vw;
+        padding-right: .5vw;
+        width: 3vw;
+    }
 }
