@@ -1,7 +1,7 @@
 import React from "react";
 import { useStaticQuery, graphql, Link } from "gatsby";
 import "../components/main.scss";
-import { Footer, Landing, Button, Card, BlogPage, BlogCard, Counter, TextCard, Feature, Accordion, Navbar, QuoteBox } from '../components';
+import { Footer, Landing, Button, Card, BlogPage, BlogCard, Counter, TextCard, Feature, Accordion, Navbar, QuoteBox, VineBlurb } from '../components';
 import Logo from '../../static/circle_logo.png';
 
 export default function Home() {
@@ -63,6 +63,7 @@ export default function Home() {
     <div>
       <Navbar />
       <Landing />
+      <VineBlurb />
       <Accordion events={events} />
       <Button text="hello" link="/blogpage" size="default" />
       {/* <BlogPage /> */}

@@ -13,6 +13,7 @@ import { Feature } from "./Feature"
 import { Accordion } from "./Accordion"
 import { Navbar } from "./Navbar"
 import { QuoteBox } from "./QuoteBox"
+import { VineBlurb } from "./VineBlurb"
 
 export {
     Button,
@@ -30,4 +31,5 @@ export {
     Accordion,
     Navbar,
     QuoteBox,
+    VineBlurb,
 }
