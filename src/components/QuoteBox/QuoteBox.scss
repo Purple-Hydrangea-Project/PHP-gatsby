@@ -1,11 +1,10 @@
+@import "./../main.scss";
+
 .quote {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    display: block;
+    margin: 0 auto;
+    display: flex;
     @include respond(tab-port) {
-        display: block;
-        padding-left: .5vw;
-        padding-right: .5vw;
-        width: 3vw;
+        width: 100vw;
+        height: auto;
     }
 }
