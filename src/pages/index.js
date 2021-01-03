@@ -3,6 +3,7 @@ import { useStaticQuery, graphql, Link } from "gatsby";
 import "../components/main.scss";
 import { Footer, Landing, Button, Card, BlogPage, BlogCard, Counter, TextCard, Feature, Accordion, Navbar, QuoteBox, VineBlurb } from '../components';
 import Logo from '../../static/circle_logo.png';
+import Vine from '../../static/vineblurb.png';
 
 export default function Home() {
 
@@ -63,7 +64,7 @@ export default function Home() {
     <div>
       <Navbar />
       <Landing />
-      <VineBlurb />
+      <VineBlurb img={Vine} text="This is a blurb" />
       <Accordion events={events} />
       <Button text="hello" link="/blogpage" size="default" />
       {/* <BlogPage /> */}
