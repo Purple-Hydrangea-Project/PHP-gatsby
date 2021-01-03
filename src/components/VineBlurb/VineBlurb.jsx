@@ -6,9 +6,9 @@ export default class VineBlurb extends React.Component {
         const {img, text} = this.props
         return (
             <div className="VineBlurb">
-                <img src={img} alt="vines" />
+                <img src={img} alt="vines" class="vine"/>
                 <div className="blurb">
-                    <p>{text}</p>
+                    <h1>{text}</h1>
                 </div>
             </div>
         )

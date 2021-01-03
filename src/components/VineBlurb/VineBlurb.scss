@@ -1,21 +1,37 @@
 @import "./../main.scss";
 
 .VineBlurb {
-    vertical-align: top;
-    display: inline-block;
-    text-align: center;
+    padding:  3rem;
+    display: block;
     position: relative;
+    align-items: center;
     @include respond(tab-port) {
-        width: 78.666vw;
-        margin: 4vw 10.667vw;
+        width: 80%;
+        margin: 1rem auto;
     }
 }
 
+.vine {
+    justify-content: center;
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 90%;
+}
+
 .blurb {
-    position: absolute;
-    bottom: 25rem;
-    right: 30rem;
-    color: black;
-    padding-left: 20px;
-    padding-right: 20px;
+    justify-content: center;
+    left: 30%;
+    bottom: 250px;
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    @include respond(tab-port) {
+        font-size: small;
+        bottom: 220px;
+    }
+}
+
+.text {
+    padding: 1.5rem;
 }
