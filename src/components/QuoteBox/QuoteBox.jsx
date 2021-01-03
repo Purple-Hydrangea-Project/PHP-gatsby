@@ -8,17 +8,16 @@ export default class QuoteBox extends React.Component {
             <div class="container">
                 <div>
                     <div className="col">
-                        <img src={startimg} alt="quotation" />
+                        <img src={startimg} alt="quotation" className="startquote"/>
                     </div>
                     <div className="quote">
                         <p>{text}</p>
                     </div>
                     <div className="col">
-                        <img src={endimg} alt="quotation" />
+                        <img src={endimg} alt="quotation" className="endquote"/>
                     </div>
                 </div>
                 <div className="credit">
-
                     <p>{credit}</p>
                 </div>
             </div>
