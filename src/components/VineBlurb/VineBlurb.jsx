@@ -8,7 +8,7 @@ export default class VineBlurb extends React.Component {
             <div className="VineBlurb">
                 <img src={img} alt="vines" class="vine"/>
                 <div className="blurb">
-                    <h1>{text}</h1>
+                    <h1 class="text">{text}</h1>
                 </div>
             </div>
         )
