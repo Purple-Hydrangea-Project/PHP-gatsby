@@ -1,11 +1,27 @@
 import React from 'react'
 import './QuoteBox.scss'
 
-import Quote from '../../../static/QuoteBox.svg'
+export default class QuoteBox extends React.Component {
+    render() {
+        const {startimg, endimg, text, credit} = this.props
+        return (
+            <div class="container">
+                <div>
+                    <div className="col">
+                        <img src={startimg} alt="quotation" />
+                    </div>
+                    <div className="quote">
+                        <p>{text}</p>
+                    </div>
+                    <div className="col">
+                        <img src={endimg} alt="quotation" />
+                    </div>
+                </div>
+                <div className="credit">
 
-const QuoteBox = () => (
-        <div className="quote">
-            <img src={Quote} alt="quote" />
-        </div>
-)
-export default QuoteBox
+                    <p>{credit}</p>
+                </div>
+            </div>
+        )
+    }
+}
