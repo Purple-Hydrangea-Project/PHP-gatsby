@@ -6,7 +6,7 @@ export default class BlogCard extends React.Component {
     const {image, title, author, date, likes, excerpt, ...props} = this.props;
     
     return (
-        <div class="card">
+        <div class="blogCard">
 
             <img src={image} class="img" />
             <div class="info">
