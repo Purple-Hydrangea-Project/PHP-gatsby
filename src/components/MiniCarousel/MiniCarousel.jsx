@@ -26,6 +26,8 @@ const MiniCarousel = (props) => {
 }
 
 export default MiniCarousel
+var initial = true;
+window.addEventListener('resize', changeCarousel);
 
 var position = 2;
 
@@ -66,22 +68,19 @@ function move(direction, resourceNum){
 
     }
 
-    
+    changeCarousel();
 }
 
-/*
-var isInitial = true;
 
-function change(){
-    if(isInitial){
-        isInitial = false;
-        setTimeout(changeCarousel(5), 5000);
+function changeCarousel(){
+    var resourcenum = 5;
+    console.log(initial);
+    if (initial){
+        initial = false;
     }
     else{
-        changeCarousel(5);
-    }
-}
-function changeCarousel(resourcenum){
+
+    
     var myresource;
 
 
@@ -89,7 +88,7 @@ function changeCarousel(resourcenum){
     console.log(window.innerWidth);
     console.log("test");
 
-    if(window.innerWidth <= 600){
+    if(window.innerWidth <= 400){
         console.log("yeehaw");
         
         for (var i = 0; i < resourcenum; i++){
@@ -99,8 +98,6 @@ function changeCarousel(resourcenum){
 
             if(currentposition === 5 || currentposition === 6)
             {
-                //document.getElementsByClassName("resource")[i].style.width = "20vw";
-                //document.getElementsByClassName("resource")[i].style.height = "20vw";
                 myresource.style.display = "none";
             }
             else{
@@ -118,8 +115,6 @@ function changeCarousel(resourcenum){
             //document.getElementsByClassName("resource")[j].style.height = "10vw";
         }
     }
+}
     
 }
-
-//window.onresize = change();
-*/

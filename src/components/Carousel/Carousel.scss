@@ -2,11 +2,19 @@
 
 
 .carousel{
+    padding: 5% 0;
     display: grid;
     margin: auto;
     grid-template-columns: repeat(3, 2fr);
     grid-template-rows: 1fr;
-    background-color: gray;
+    background-color: white;
+    opacity: 0.8;
+    width: 100%;
+    min-height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
 
     #left{
         order: 1;
@@ -18,8 +26,8 @@
         width: 50%;
         height: auto;
         position: relative;
-        top: 50%;
-        left: 50%;
+        top: 45%;
+        left: 45%;
     }
 
     #slide0{
@@ -40,14 +48,16 @@
 
     
     .slide {
-        width: 75vw;
-        height: 300px;
-        font-size: 2vw;
+        font-size: 0.75em;
         text-align: center;
         align-content: center;
-        padding: 5%;
-        margin: 0 2vw;     
-        order:2;
+        margin: auto;     
+        order: 2;
+        width: 100%;
+        min-width: 70vw;
+        p{
+            margin: auto;
+        }
         
     }
 
@@ -59,7 +69,7 @@
         display: inline-flex;
         margin: auto;
         .circle{
-            background-color: black;
+            background-color: #D4D4D4;
             padding: 0;
             border-radius: 50%;
             width: 10px;

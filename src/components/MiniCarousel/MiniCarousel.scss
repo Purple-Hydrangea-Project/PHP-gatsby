@@ -6,7 +6,9 @@
     margin: auto;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: 1fr;
-    
+    @media(max-width: 400px) {
+        padding: 0 12%;
+    }
 
     #left{
         order: 1;
@@ -16,11 +18,13 @@
     }
     .arrow{
         width: 25%;
-        height: 25%;
+        height: auto;
         position: relative;
         top: 50%;
         left: 50%;
-
+        @media (max-width: 400px){
+            width: 100%;
+        }
     }
 
     #resource0{
@@ -58,7 +62,12 @@
         background-size: cover;
         background-color: $pale-green;
         background-blend-mode: multiply;
-
+        
+        @media (max-width: 400px) {
+            font-size: 3vw;
+            width: 15vw;
+            height: 15vw;
+        }
         
         a{
             margin: 0;
