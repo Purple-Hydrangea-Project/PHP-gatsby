@@ -1,0 +1,80 @@
+@import "./../main.scss";
+
+
+.carousel{
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: 1fr;
+    background-color: gray;
+
+    #left{
+        order: 1;
+    }
+    #right{
+        order: 3;
+    }
+    .arrow{
+        width: 50%;
+        height: auto;
+        position: relative;
+        top: 50%;
+        left: 50%;
+    }
+
+    #slide0{
+        display: block;
+    }
+    #slide1{
+        display: none;
+    }
+    #slide2{
+        display: none;
+    }
+    #slide3{
+        display: none;
+    }
+    #slide4{
+        display: none;
+    }
+
+    
+    .slide {
+        width: 75vw;
+        height: 300px;
+        font-size: 2vw;
+        text-align: center;
+        align-content: center;
+        padding: 5%;
+        margin: 0 2vw;     
+        order:2;
+        
+    }
+
+    .space{
+        order: 4;
+    }
+    .carousel-circles{
+        order: 5;
+        display: inline-flex;
+        margin: auto;
+        .circle{
+            background-color: black;
+            padding: 0;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            margin: 5px 2px;
+        }
+        .circle:hover{
+            cursor: pointer;
+        }
+        #circle0{
+            background-color: white;
+        }
+    }
+    
+    
+}
+
+

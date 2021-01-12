@@ -1,7 +1,7 @@
 import React from "react";
 import { useStaticQuery, graphql, Link } from "gatsby";
 import "../components/main.scss";
-import { Footer, Landing, Button, Card, BlogPage, BlogCard, Counter, TextCard, Feature, Accordion, Navbar, MiniCarousel } from '../components';
+import { Footer, Landing, Button, Card, BlogPage, BlogCard, Counter, TextCard, Feature, Accordion, Navbar, MiniCarousel, Carousel } from '../components';
 import Logo from '../../static/circle_logo.png';
 
 export default function Home() {
@@ -92,24 +92,27 @@ export default function Home() {
     }
   ]
 
-  const resources = [
+
+  const slide = [
     {
-      name: 'apps',
-      link: 'google.com',
-      img: {Logo}
+      num:0,
+      text:"dsfjaskdlfjlksanfdlkjldakcndsoijfoisdjfoiewfsdlkfjdsalkfjdsalkfjdslkfjds"
     },
     {
-      name: 'hotlines',
-      link: 'google.com',
-      img: {Logo}
+      num:1,
+      text:"sdjflkdsajflkdsafmcvjhdffjoiwaeflksmlkdsjflkdsflkdsfnmlsdkfkdsjfldsafkds"
     }
   ]
+
+
+
 
   return (
     <div>
       <Navbar />
       <Landing />
       <MiniCarousel events={resource} />
+      <Carousel events={slide} />
       <Accordion events={events} />
       <Button text="hello" link="/blogpage" size="default" />
       {/* <BlogPage /> */}
@@ -130,7 +133,7 @@ export default function Home() {
 
       <div class="blogcards">
         <BlogCard image="{Logo}" title="title" author="author" date="date" likes="50" excerpt="excerpt" />
-        <BlogCard image="{Logo}" title="title" author="author" date="date" likes="50" excerpt="excerpt" />
+        <BlogCard image="{Logo}" title="title2" author="author" date="date" likes="50" excerpt="excerpt" />
       </div>
 
       <Feature image="https://iarp.org/wp-content/uploads/2015/04/purple-1.jpg" title="my blog" author="me" date="today" likes="500"/>

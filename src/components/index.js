@@ -13,6 +13,7 @@ import { Feature } from "./Feature"
 import { Accordion } from "./Accordion"
 import { Navbar } from "./Navbar"
 import { MiniCarousel } from "./MiniCarousel"
+import { Carousel } from "./Carousel"
 
 
 export {
@@ -30,5 +31,6 @@ export {
     Feature,
     Accordion,
     Navbar,
-    MiniCarousel
+    MiniCarousel,
+    Carousel
 }
