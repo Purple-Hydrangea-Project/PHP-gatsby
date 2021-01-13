@@ -1,0 +1,16 @@
+@import "./../main.scss";
+
+.round-button {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    border-style: none;
+    padding: 5px;
+    position: relative;
+    background-color: #CDCDFF;
+}
+
+.text-blurb {
+    font-style: italic;
+    font-family: "Montserrat", 'sans serif';
+}
