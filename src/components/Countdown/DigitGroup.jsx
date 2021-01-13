@@ -7,7 +7,7 @@ const DigitGroup = (props) => {
     return (
         <div className="digit-group">
             <div className="my-container cell-container">
-                {props.digits.map((digit) => {
+                {props.digits.split().map((digit) => {
                     return (<OneCell digit={digit} />)
                 })}
             </div>
