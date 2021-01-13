@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "gatsby";
 import "./Navbar.scss";
 import Menu from "./Menu";
 import MenuButton from "./MenuButton";
@@ -52,6 +53,7 @@ export default class Navbar extends React.Component {
         },
       }
     const menu = ['Home', 'Events', 'Resources', 'Blog', 'Get Involved', 'About', 'Donate'];
+    const menuLinks = ['/', '/__graphql', '/__graphql', '/__graphql', '/__graphql', '/__graphql', '/__graphql']
     const mobileMenuItems = menu.map((val,index)=>{
       return (
         <MenuItem 
@@ -60,9 +62,10 @@ export default class Navbar extends React.Component {
           onClick={()=>{this.handleLinkClick();}}>{val}</MenuItem>)
     });
     const desktopMenuItems = menu.map((val, index)=>{
+      const link = menuLinks[index];
       return(
         <div className="item">
-          <p>{val}</p>
+          <p><Link to={link}>{val}</Link></p>
         </div>
       )
     });
