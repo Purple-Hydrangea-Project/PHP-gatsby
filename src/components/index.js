@@ -14,6 +14,7 @@ import { Accordion } from "./Accordion"
 import { Navbar } from "./Navbar"
 import { QuoteBox } from "./QuoteBox"
 import { VineBlurb } from "./VineBlurb"
+import { BubbleButtons } from "./BubbleButtons"
 
 export {
     Button,
@@ -32,4 +33,5 @@ export {
     Navbar,
     QuoteBox,
     VineBlurb,
+    BubbleButtons,
 }
