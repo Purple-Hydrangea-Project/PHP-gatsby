@@ -1,11 +1,12 @@
 import React from "react";
 import { useStaticQuery, graphql, Link } from "gatsby";
 import "../components/main.scss";
-import { Footer, Landing, Button, Card, BlogPage, BlogCard, Counter, TextCard, Feature, Accordion, Navbar, QuoteBox, VineBlurb } from '../components';
+import { Footer, Landing, Button, Card, BlogPage, BlogCard, Counter, TextCard, Feature, Accordion, Navbar, QuoteBox, VineBlurb, BubbleButtons } from '../components';
 import Logo from '../../static/circle_logo.png';
 import Vine from '../../static/vineblurb.png';
 import StartQuote from '../../static/startquote.png';
 import EndQuote from '../../static/endquote.png';
+
 
 export default function Home() {
 
@@ -85,6 +86,7 @@ export default function Home() {
       <QuoteBox startimg={StartQuote} endimg={EndQuote} text="I think that the strength that one gains from trauma and struggle doesn't come from the experience alone; the strength is gained by using the pain one went through and transforming it into healing. I knew that it was a shot in the dark to take on such a huge project about something that is still so controversial, but who has ever made a difference in the world that played it safe?" credit="Madeleine Salem, the PHP President and Founder"/>
       <VineBlurb img={Vine} text="This is a blurb" />
       <Footer />
+      <BubbleButtons />
 
       <div class="blogcards">
         <BlogCard image="{Logo}" title="title" author="author" date="date" likes="50" excerpt="excerpt" />
