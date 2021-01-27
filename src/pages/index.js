@@ -1,7 +1,7 @@
 import React from "react";
 import { useStaticQuery, graphql, Link } from "gatsby";
 import "../components/main.scss";
-import { Footer, Landing, Button, Card, BlogPage, BlogCard, Counter, TextCard, Feature, Accordion, Navbar, QuoteBox, VineBlurb, BubbleButtons } from '../components';
+import { Footer, Landing, Button, Card, BlogPage, BlogCard, Counter, TextCard, Feature, Accordion, Navbar, Countdown, QuoteBox, VineBlurb, BubbleButtons } from '../components';
 import Logo from '../../static/circle_logo.png';
 import Vine from '../../static/vineblurb.png';
 import StartQuote from '../../static/startquote.png';
@@ -72,11 +72,14 @@ export default function Home() {
     <div>
       <Navbar />
       <Landing />
+      <div className="section row">
+        <Countdown />
+      </div>
       <Accordion events={events} />
       <Button text="hello" link="/blogpage" size="default" />
       {/* <BlogPage /> */}
       <div className="section row">
-      {data.allContentfulTeamMember.edges.map(edge => {
+        {data.allContentfulTeamMember.edges.map(edge => {
           return (
             <Card img={edge.node.image.file.url} title={edge.node.name} text={edge.node.blurb.blurb} />
           )
@@ -98,7 +101,7 @@ export default function Home() {
         <BlogCard image="{Logo}" title="title" author="author" date="date" likes="50" excerpt="excerpt" />
       </div>
 
-      <Feature image="https://iarp.org/wp-content/uploads/2015/04/purple-1.jpg" title="my blog" author="me" date="today" likes="500"/>
+      <Feature image="https://iarp.org/wp-content/uploads/2015/04/purple-1.jpg" title="my blog" author="me" date="today" likes="500" />
     </div>
   );
 }
