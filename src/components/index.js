@@ -14,7 +14,7 @@ import { Accordion } from "./Accordion"
 import { Navbar } from "./Navbar"
 import { QuoteBox } from "./QuoteBox"
 import { VineBlurb } from "./VineBlurb"
-import { BubbleButtons } from "./BubbleButtons"
+import { Countdown } from "./Countdown"
 import { Countdown } from "./Countdown"
 
 export {
@@ -34,6 +34,6 @@ export {
     Navbar,
     QuoteBox,
     VineBlurb,
-    BubbleButtons,
     Countdown,
+    BubbleButtons,
 }
