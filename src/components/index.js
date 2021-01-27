@@ -12,6 +12,9 @@ import { TextCard } from "./TextCard"
 import { Feature } from "./Feature"
 import { Accordion } from "./Accordion"
 import { Navbar } from "./Navbar"
+import { QuoteBox } from "./QuoteBox"
+import { VineBlurb } from "./VineBlurb"
+import { BubbleButtons } from "./BubbleButtons"
 import { Countdown } from "./Countdown"
 
 export {
@@ -29,5 +32,8 @@ export {
     Feature,
     Accordion,
     Navbar,
+    QuoteBox,
+    VineBlurb,
+    BubbleButtons,
     Countdown,
 }
