@@ -65,12 +65,14 @@ export default function Home() {
     <div>
       <Navbar />
       <Landing />
+      <VineBlurb img={Vine} text="This is a blurb" />
+      
+      <Counter values={counterValues} duration={2000} />
+      
       <div className="section row">
         <Countdown />
       </div>
       
-      <Counter values={counterValues} duration={2000} />
-      <VineBlurb img={Vine} text="This is a blurb" />
       <Footer />
 
     </div>
