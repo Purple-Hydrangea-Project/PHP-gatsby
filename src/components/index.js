@@ -15,6 +15,7 @@ import { Navbar } from "./Navbar"
 import { QuoteBox } from "./QuoteBox"
 import { VineBlurb } from "./VineBlurb"
 import { Countdown } from "./Countdown"
+import { Countdown } from "./Countdown"
 
 export {
     Button,
@@ -34,4 +35,5 @@ export {
     QuoteBox,
     VineBlurb,
     Countdown,
+    BubbleButtons,
 }
