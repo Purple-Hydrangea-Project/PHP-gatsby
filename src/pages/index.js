@@ -68,10 +68,62 @@ export default function Home() {
     },
   ]
 
+  const resource = [
+    {
+      num: 0,
+      name: 'apps',
+      link: 'google',
+      img: 'https://ichef.bbci.co.uk/news/1024/cpsprodpb/151AB/production/_111434468_gettyimages-1143489763.jpg'
+    },
+    {
+      num: 1,
+      name: 'hotlines',
+      link: 'gsdfdsfoogle',
+      img: 'https://ichef.bbci.co.uk/news/1024/cpsprodpb/151AB/production/_111434468_gettyimages-1143489763.jpg'
+    },
+    {
+      num: 2,
+      name: 'blogs',
+      link: 'gsdfdsfoogle',
+      img: 'https://ichef.bbci.co.uk/news/1024/cpsprodpb/151AB/production/_111434468_gettyimages-1143489763.jpg'
+    },
+    {
+      num: 3,
+      name: 'orgs',
+      link: 'gsdfdsfoogle',
+      img: 'https://ichef.bbci.co.uk/news/1024/cpsprodpb/151AB/production/_111434468_gettyimages-1143489763.jpg'
+    },
+    {
+      num: 4,
+      name: 'books',
+      link: 'gsdfdsfoogle',
+      img: 'https://ichef.bbci.co.uk/news/1024/cpsprodpb/151AB/production/_111434468_gettyimages-1143489763.jpg'
+    }
+  ]
+
+
+  const slide = [
+    {
+      img: 'https://ichef.bbci.co.uk/news/1024/cpsprodpb/151AB/production/_111434468_gettyimages-1143489763.jpg',
+      num:0,
+      text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum mi ante. Suspendisse vel sem et quam sagittis efficitur non quis tortor. Praesent luctus lorem at leo commodo interdum. Cras non turpis nec enim rutrum vehicula. Praesent malesuada nibh nec hendrerit tempus. Vestibulum at urna finibus, blandit purus quis, consequat tellus. Nullam tincidunt bibendum lectus. Suspendisse arcu nunc, rutrum a mauris eget, mollis sagittis justo."
+    },
+    {
+      img: 'https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/cat_relaxing_on_patio_other/1800x1200_cat_relaxing_on_patio_other.jpg',
+      num:1,
+      text:"Phasellus ipsum metus, porttitor quis nunc eu, posuere suscipit enim. Nam mollis lorem dolor. In hac habitasse platea dictumst. Maecenas at pretium ante. Mauris hendrerit sollicitudin mauris eget imperdiet. Vestibulum sit amet magna vitae arcu sodales consectetur. Proin tellus magna, condimentum eget egestas eu, interdum in justo. Nullam accumsan, sem eu suscipit dictum, odio massa vehicula est, a finibus mi nisi vitae massa. Integer lobortis eu lorem quis lobortis."
+    }
+  ]
+
+
+
+
   return (
     <div>
       <Navbar />
       <Landing />
+      <MiniCarousel events={resource} />
+      <Carousel events={slide} />
       <div className="section row">
         <Countdown />
       </div>
@@ -95,12 +147,10 @@ export default function Home() {
       <VineBlurb img={Vine} text="This is a blurb" />
       <Footer />
       <BubbleButtons img1={Marketing} img2={Finance} img3={TechDev} img4={Creative} img5={Outreach} />
-
       <div class="blogcards">
         <BlogCard image="{Logo}" title="title" author="author" date="date" likes="50" excerpt="excerpt" />
-        <BlogCard image="{Logo}" title="title" author="author" date="date" likes="50" excerpt="excerpt" />
+        <BlogCard image="{Logo}" title="title2" author="author" date="date" likes="50" excerpt="excerpt" />
       </div>
-
       <Feature image="https://iarp.org/wp-content/uploads/2015/04/purple-1.jpg" title="my blog" author="me" date="today" likes="500" />
     </div>
   );
