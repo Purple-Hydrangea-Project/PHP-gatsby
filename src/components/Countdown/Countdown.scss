@@ -1,0 +1,54 @@
+@import "./../main.scss";
+
+.countdown {
+    background-color: $mint-green;
+    border-radius:20px;
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+
+    .title {
+        font-weight: bold;
+        letter-spacing: 0.125em;
+        font-size:30px;
+        margin-bottom: 0px;
+    }
+
+    .countdown-container {
+        justify-content: space-between;
+
+        .digit-group {
+            flex-direction: column;
+            margin: 10px;
+    
+            .subheading {
+                font-size: 15px;
+            }
+
+            .cell-container {
+                justify-content: space-around;
+
+                .one-cell {
+                    background-color: $gray;
+                    padding: 20px;
+                    border-radius: 15px;
+                    margin: 5px;
+        
+                    .digit {
+                        font-size: 5vw;
+                        font-weight: 400;
+                        margin: 0;
+                        @include respond(tab-port) {
+                            font-size: 10.333vw;
+                        }
+                    }
+                }
+            }
+    
+            
+        }
+    }
+
+    
+}
