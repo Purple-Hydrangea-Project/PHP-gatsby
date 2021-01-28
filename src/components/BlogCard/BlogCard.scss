@@ -13,57 +13,43 @@
       width: 100%;
     }
     
-<<<<<<< HEAD
-    .info{
-      padding: 5% 5% 10% 5%;
-=======
-        .excerpt{
-            margin: 1.5em 0 0 0;
-            font-style: italic;
-        }
-    
-        .num{
-            font-size: .5em;
-            font-weight: lighter;
-            float:right;
-        
-            .likes{
-                width: 10px;      
-              }
-            .like{
-              font-weight: lighter;
-              color: black;
-            }
-          }
-      }
-  }
-  
-  
-  
-  
-  
-  
-  
-  
->>>>>>> bc37c01c47174387187102e9f95a77db4d2907d3
-  
-      h3{
-          font-weight: normal;
-      }
-  
-      .excerpt{
-          margin: 1.5em 0 0 0;
-          font-style: italic;
-      }
-  
-      .num{
-          font-size: .5em;
-          font-weight: lighter;
-          float:right;
-      
-          .likes{
-              width: 10px;      
-            }
-        }
+  .info{
+    padding: 5% 5% 10% 5%;
+    .excerpt{
+      margin: 1.5em 0 0 0;
+      font-style: italic;
     }
+
+    .num{
+      font-size: .5em;
+      font-weight: lighter;
+      float:right;
+  
+      .likes{
+          width: 10px;      
+        }
+      .like{
+        font-weight: lighter;
+        color: black;
+      }
+    }
+  }
+
+  h3{
+    font-weight: normal;
+  }
+  .excerpt{
+    margin: 1.5em 0 0 0;
+    font-style: italic;
+  }
+
+  .num{
+    font-size: .5em;
+    font-weight: lighter;
+    float:right;
+
+    .likes{
+      width: 10px;      
+    }
+  }
 }
