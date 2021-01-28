@@ -8,6 +8,7 @@
     flex: 1;
     text-align: center;
     height: 100%;
+    
     @include respond(tab-port) {
         width: 78.666vw;
         margin: 4vw 10.667vw;
@@ -15,10 +16,12 @@
 
     .title {
         color: $accent-text-purple;
+        line-height: 2em;
     }
 
     .info {
         color: $dark-text-purple;
+        line-height: 1.15em;
     }
 
     .img {

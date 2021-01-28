@@ -36,5 +36,21 @@
         margin: auto;
     }
     
+    @media (max-width: 600px) {
+        .lefttext{
+            border: 0;
+            padding-top: 2%;
+            border-top: 5px solid black;
+            text-align: left;
+        }
+    
+        .righttext{
+            border: 0;
+            border-bottom: 5px solid black;
+            padding-top: 2%;
+            text-align: right;
+        }
+      }
+      
 
 }
