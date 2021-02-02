@@ -8,7 +8,6 @@ const Circles = (props) => {
     return (
         <div className="circle" id={"circle" + event.num.toString()} onClick={() => props.functions(event.num)}>            
         </div>
-
     )
 }
 export default Circles

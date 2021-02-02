@@ -7,7 +7,6 @@ const Slide = (props) => {
     return (
         <div className="slide" id={"slide" + event.num.toString()}>
             <p>{event.text}</p>
-            
         </div>
 
     )

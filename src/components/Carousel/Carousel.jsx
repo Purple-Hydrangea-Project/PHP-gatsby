@@ -17,29 +17,21 @@ const Carousel = (props) => {
         <div className="carousel" id="carousel" style={{backgroundImage: `url(${backgroundImages[0]})`}}>
             <img id="left" className="arrow" src={Left} onClick={() => move("left", props.events.length, backgroundImages)}/>
             
-            
             {props.events.map((event) => {
                 return (
                         <Slide eventObj={event} />
                        )
             })}
 
-
             <img id="right" className="arrow" src={Right} onClick={() => move("right", props.events.length, backgroundImages)}/>
              <div className="space"></div>  
             <div className="carousel-circles">
                 {props.events.map((event) => {
-                    return (
-                            
+                    return ( 
                         <div className="circle" id={"circle" + event.num.toString()} onClick={() => circleClick(event.num)}></div>   
-
-                        
                         )
                 })}
             </div>
-
-            
-            
         </div>
     )
 
@@ -49,8 +41,6 @@ const Carousel = (props) => {
 export default Carousel
 
 var currentPos = 0;
-
-
 function move(direction, resourceNum, backgroundImage){
     console.log(backgroundImage);
     if (direction === "left"){
@@ -79,11 +69,8 @@ function move(direction, resourceNum, backgroundImage){
             else{
                 myResource.style.display = "none";
                 myCircle.style.backgroundColor = "#D4D4D4";
-            }
-                       
+            }             
         }
-
-    
 }
 
 function circleClick(circleNum){
