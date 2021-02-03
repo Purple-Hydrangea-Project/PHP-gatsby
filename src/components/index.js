@@ -18,6 +18,7 @@ import { QuoteBox } from "./QuoteBox"
 import { VineBlurb } from "./VineBlurb"
 import { Countdown } from "./Countdown"
 import { BubbleButtons } from "./BubbleButtons"
+import { ResourceItem } from "./ResourceItem"
 
 
 export {
@@ -41,4 +42,5 @@ export {
     VineBlurb,
     Countdown,
     BubbleButtons,
+    ResourceItem,
 }
