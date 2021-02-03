@@ -8,12 +8,13 @@ $montserrat: "Montserrat", sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding: 2em;
     @include respond(tab-port) {
         flex-direction: column;
     }
 
     .col {
-        width: 30vw;
+        width: 25vw;
         display: flex;
         justify-content: center;
         align-content: center;
@@ -29,20 +30,20 @@ $montserrat: "Montserrat", sans-serif;
     }
 
     .first {
-        font-size: 27px;
+        font-size: 1em;
     }
 
     .second {
         .logo {
-            width: 95px;
+            width: 5em;
         }
         .title {
             font-weight: bold;
-            font-size: 31px;
+            font-size: 2em;
             margin-bottom: 0px;
         }
         .connect {
-            font-size: 27px;
+            font-size: 1em;
         }
     }
     
@@ -50,7 +51,7 @@ $montserrat: "Montserrat", sans-serif;
     .third {
         .title {
             font-weight: bold;
-            font-size: 27px;
+            font-size: 1.5em;
         }
         .contact {
             text-align: left;
