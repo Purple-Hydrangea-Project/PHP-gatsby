@@ -7,28 +7,26 @@ export default class TextCard extends React.Component {
     const {alignment, text, img, heading, ...props} = this.props
     if(alignment == "left"){
         return(
-            <div class="TextCard">
-                <div class="textcard">
-                <div class="lefttext text">
+            <div className="TextCard">
+                <div className="textcard">
+                <div className="lefttext text">
                 <h1>{heading}</h1>
                 <p>{text}</p>
                 </div>
-                
-                <img src={img}/>
-              </div>
+                  <img src={img}/>
+                </div>
             </div>
             
           )
     }
     else{
         return(
-            <div class="TextCard">
-                <div class="textcard">
-                
-                <img src={img}/>
-                <div class="righttext text">
-                <h1>{heading}</h1>
-                <p>{text}</p>
+            <div className="TextCard">
+                <div className="textcard">
+                  <img src={img}/>
+                  <div className="righttext text">
+                  <h1>{heading}</h1>
+                  <p>{text}</p>
                 </div>
               </div>
             </div>
