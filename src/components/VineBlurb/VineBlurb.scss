@@ -25,13 +25,5 @@
     bottom: 250px;
     display: inline-block;
     position: relative;
-    margin: auto;
-    @include respond(tab-port) {
-        font-size: small;
-        bottom: 220px;
-    }
-}
-
-.text {
-    padding: 1.5rem;
+    margin: auto; 
 }
