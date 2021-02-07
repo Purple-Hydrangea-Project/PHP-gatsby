@@ -38,14 +38,20 @@ export default function Home() {
     <div>
       <Navbar />
       <Landing />
-      <VineBlurb img={Vine} text="This is a blurb" />
+      <div className="vine-section">
+        <VineBlurb className="vine-img" img={Vine} />
+      </div>
+         <h2 className="blurb">This is a little blurb</h2>
       <Carousel events={slide} />
       <Counter values={counterValues} duration={2000} />
-      <div className="section row">
-        <Countdown />
-      </div>
+      <h1>upcoming event name</h1>
+        <div className="row">
+            <div className="column">
+              <Countdown />
+            </div>
+        </div>
+      <h1>our partners</h1> 
       <Footer />
-
     </div>
   );
 }
