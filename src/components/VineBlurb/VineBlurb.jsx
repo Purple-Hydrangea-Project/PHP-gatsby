@@ -1,15 +1,11 @@
 import React from 'react'
-import './VineBlurb.scss'
 
 export default class VineBlurb extends React.Component {
     render() {
-        const {img, text} = this.props
+        const {img} = this.props
         return (
             <div className="VineBlurb">
-                <img src={img} alt="vines" class="vine"/>
-                <div className="blurb">
-                    <h1 class="text">{text}</h1>
-                </div>
+                <img src={img} alt="vines" className="vine"/>
             </div>
         )
     }
