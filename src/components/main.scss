@@ -117,3 +117,40 @@ h1{
   color: $landing-purple;
 }
 
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.column-right {
+  float: right;
+  width: 50%;
+  padding: 10px;
+}
+
+.row::after {
+  content: "event description";
+  display: table;
+  clear: both;
+  padding: 150px 0;
+  text-align: center;
+  margin: auto;
+}
+
+.vine-img {
+  position: absolute;
+  z-index: -2;
+}
+
+.blurb {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.vine-section {
+  position: relative;
+  margin-top: -200px;
+  height: 500px;
+  z-index: -2;
+}
