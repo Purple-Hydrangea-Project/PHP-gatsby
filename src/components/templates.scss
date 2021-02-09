@@ -68,6 +68,27 @@
   }
 }
 
+.resources {
+  h1 {
+    margin-top: 213px;
+    font-size: 67px;
+    font-weight: 700;
+    line-height: 82px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
 
+  .warning {
+    padding: 60px;
+    margin: 160px 4.45vw;
+    border-radius: 20px;
+    background-color: $pale-green;
+
+    p {
+      font-size: 28px;
+      line-height: 34px;
+    }
+  }
+}
 
 
