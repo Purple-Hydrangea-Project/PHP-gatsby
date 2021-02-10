@@ -80,14 +80,16 @@ body {
   overflow-x: hidden;
   font-family: $montserrat;
   margin: 0;
+  text-align: center;
 }
 .section {
   margin: 0;
-  width: 100vw;
+  width: 80vw;
   display: flex;
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
+  padding: 5vw 10vw 5vw 10vw;
 }
 
 .row {
@@ -101,6 +103,14 @@ body {
 
 .my-container {
   display: flex;
+}
+
+.heading {
+  font-size: 4em;
+}
+
+.subheading {
+  font-size: 3em;
 }
 
 .blogcards{
