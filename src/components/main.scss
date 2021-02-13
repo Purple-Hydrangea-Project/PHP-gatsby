@@ -164,3 +164,11 @@ h1{
   height: 500px;
   z-index: -2;
 }
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  margin: 0;
+  padding: 0;
+}
