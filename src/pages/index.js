@@ -146,7 +146,11 @@ export default function Home() {
       <QuoteBox startimg={StartQuote} endimg={EndQuote} text="I think that the strength that one gains from trauma and struggle doesn't come from the experience alone; the strength is gained by using the pain one went through and transforming it into healing. I knew that it was a shot in the dark to take on such a huge project about something that is still so controversial, but who has ever made a difference in the world that played it safe?" credit="Madeleine Salem, the PHP President and Founder"/>
       <VineBlurb img={Vine} text="This is a blurb" />
       <Footer />
-      <BubbleButtons img1={Marketing} img2={Finance} img3={TechDev} img4={Creative} img5={Outreach} />
+      <BubbleButtons icon={Marketing} text="Marketing" />
+      <BubbleButtons icon={Finance} text="Finance" />
+      <BubbleButtons icon={TechDev} text="Tech Development" />
+      <BubbleButtons icon={Creative} text="Creative" />
+      <BubbleButtons icon={Outreach} text="Outreach" />
       <div class="blogcards">
         <BlogCard image="{Logo}" title="title" author="author" date="date" likes="50" excerpt="excerpt" />
         <BlogCard image="{Logo}" title="title2" author="author" date="date" likes="50" excerpt="excerpt" />

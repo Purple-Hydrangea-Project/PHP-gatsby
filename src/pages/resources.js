@@ -1,5 +1,5 @@
 import React from 'react';
-import '../components/templates.scss';
+import '../components/pages.scss';
 import { Navbar, MiniCarousel, ResourceItem, Footer } from '../components/index';
 import Img1 from "../../static/resource1.svg"
 import Img2 from "../../static/resource2.svg"
