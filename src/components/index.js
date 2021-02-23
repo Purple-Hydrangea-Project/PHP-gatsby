@@ -18,7 +18,7 @@ import { QuoteBox } from "./QuoteBox"
 import { VineBlurb } from "./VineBlurb"
 import { Countdown } from "./Countdown"
 import { BubbleButtons } from "./BubbleButtons"
-
+import { RecentPosts } from "./RecentPosts"
 
 export {
     Button,
@@ -41,4 +41,5 @@ export {
     VineBlurb,
     Countdown,
     BubbleButtons,
+    RecentPosts
 }
