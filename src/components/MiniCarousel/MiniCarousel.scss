@@ -76,11 +76,12 @@
             line-height: 0;
             color: black !important;
             font-weight: bolder;
-
+            text-decoration: none;
         }
         a:hover{
             color: white !important;
             transition: 0.2s !important;
+            cursor: pointer;
         }
         
     }

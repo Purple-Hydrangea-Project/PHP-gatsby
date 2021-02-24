@@ -1,7 +1,7 @@
 @import "./../main.scss";
 
 .countdown {
-    background-color: $mint-green;
+    background-color: $pale-green;
     border-radius:20px;
     padding: 10px;
     flex-direction: column;
@@ -45,10 +45,6 @@
                     }
                 }
             }
-    
-            
         }
     }
-
-    
 }

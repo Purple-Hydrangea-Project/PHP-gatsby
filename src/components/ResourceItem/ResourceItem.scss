@@ -1,0 +1,20 @@
+@import '../main.scss';
+
+.resourceItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1.667vw 9.167vw;
+
+  img {
+    width: 6.250vw;
+    margin-right: 2.778vw;
+  }
+
+  p {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 37px;
+    letter-spacing: 0em;
+  }
+}
