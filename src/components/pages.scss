@@ -1,0 +1,117 @@
+@import "./main.scss";
+@import url("https://use.typekit.net/upg4lus.css");
+
+.resources {
+  h1 {
+    margin-top: 213px;
+    font-size: 67px;
+    font-weight: 700;
+    line-height: 82px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .warning {
+    padding: 60px;
+    margin: 160px 4.45vw;
+    border-radius: 20px;
+    background-color: $pale-green;
+
+    p {
+      font-size: 28px;
+      line-height: 34px;
+    }
+  }
+}
+
+.getInvolved {
+  h1 {
+    margin-top: 214px;
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 82px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: $landing-purple;
+    @include respond(tab-port) {
+      margin-top: 138px;
+      margin-bottom: 68px;
+      font-size: 56px;
+      line-height: normal;
+    }
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .left {
+      width: 38vw;
+      text-align: center;
+      @include respond(tab-port) {
+        width: 100%;
+      }
+      
+      h4 {
+        font-weight: 600;
+        font-size: 35px;
+      }
+
+      p {
+        margin: 2.222vw 2.222vw 0 2.222vw;
+        font-style: italic;
+      }
+
+      .default {
+        margin: 2.2vw auto 4.4vw auto;
+
+      }
+    }
+
+    .right {
+      width: 55%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+  .greenRow {
+    background-color: rgba(187, 231, 228, 30%);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    h4 {
+      font-weight: 600;
+      font-size: 35px;
+    }
+  
+    p {
+      margin: 2.222vw 2.222vw 6.6vw 2.222vw;
+      font-style: italic;
+    }
+
+    .left, .middle, .right {
+      min-height: 280px;
+      padding: 3.472vw;
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      align-items: center;
+      width: 25%;
+      @include respond(tab-port) {
+        width: 100%;
+      }
+
+      .default {
+        margin: 50px auto;
+        position: absolute;
+        bottom: 0;
+      }
+    }
+  }
+}

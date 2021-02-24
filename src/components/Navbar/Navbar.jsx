@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "gatsby";
 import "./Navbar.scss";
 import Menu from "./Menu";
 import MenuButton from "./MenuButton";
@@ -22,7 +23,7 @@ export default class Navbar extends React.Component {
   }
 
   render() {
-    const styles= 
+    const styles = 
       {
         container:{
           position: 'absolute',
@@ -39,6 +40,7 @@ export default class Navbar extends React.Component {
         },
         logo: {
           margin: '0 auto',
+          fontFamily:`'Montserrat', sans-serif`,
         },
         body: {
           display: 'flex',
@@ -50,45 +52,39 @@ export default class Navbar extends React.Component {
           transition: 'filter 0.5s ease',
         },
       }
-    const menu = ['Home', 'Events', 'Resources', 'Blog', 'Get Involved', 'About', 'Donate']
-    const menuItems = menu.map((val,index)=>{
+    const menu = ['Home', 'Events', 'Resources', 'Blog', 'Get Involved', 'About', 'Donate'];
+    const menuLinks = ['/', '/__graphql', '/__graphql', '/__graphql', '/__graphql', '/__graphql', '/__graphql']
+    const mobileMenuItems = menu.map((val,index)=>{
       return (
         <MenuItem 
           key={index} 
           delay={`${index * 0.1}s`}
           onClick={()=>{this.handleLinkClick();}}>{val}</MenuItem>)
     });
+    const desktopMenuItems = menu.map((val, index)=>{
+      const link = menuLinks[index];
+      return(
+        <div className="item">
+          <p><Link to={link}>{val}</Link></p>
+        </div>
+      )
+    });
 
     return(
       <>
         <div className="navbar-desktop">
           <img src={Logo} className="logo" />
-          <div className="item">
-            <p>Events</p>
-          </div>
-          <div className="item">
-            <p>Resources</p>
-          </div>
-          <div className="item">
-            <p>Blog</p>
-          </div>
-          <div className="item">
-            <p>Get Involved</p>
-          </div>
-          <div className="item">
-            <p>About</p>
-          </div>
-          <div className="item">
-            <p>Donate</p>
+          <div className="items">
+            {desktopMenuItems}
           </div>
         </div>
         <div className="navbar-mobile">
         <div style={styles.container}>
-          <MenuButton open={this.state.menuOpen} onClick={()=>this.handleMenuClick()} color='white'/>
-          <div style={styles.logo}>Logo</div>
+          <MenuButton open={this.state.menuOpen} onClick={()=>this.handleMenuClick()} color='white' style={{ float: 'right' }} />
+          <div style={styles.logo}>The Purple Hydrangea Project</div>
         </div>
           <Menu open={this.state.menuOpen}>
-            {menuItems}
+            {mobileMenuItems}
           </Menu>
         </div>
       </>

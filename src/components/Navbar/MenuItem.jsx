@@ -15,12 +15,13 @@ export default class MenuItem extends React.Component{
   render(){
     const styles={
       container: {
-        opacity: 0,
+        // opacity: 0,
         animation: '1s appear forwards',
         animationDelay:this.props.delay,
+        fontFamily:`'Montserrat', sans-serif`,
       },
       menuItem:{
-        fontFamily:`'Open Sans', sans-serif`,
+        fontFamily:`'Montserrat', sans-serif`,
         fontSize: '1.2rem',
         padding: '1rem 0',
         margin: '0 5%',

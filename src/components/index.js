@@ -1,5 +1,4 @@
 import { Button } from "./Button"
-import { Header } from "./Header"
 import { Landing } from "./Landing"
 import { Scroller } from "./Scroller"
 import { Socials } from "./Socials"
@@ -19,10 +18,10 @@ import { VineBlurb } from "./VineBlurb"
 import { Countdown } from "./Countdown"
 import { BubbleButtons } from "./BubbleButtons"
 import { RecentPosts } from "./RecentPosts"
+import { ResourceItem } from "./ResourceItem"
 
 export {
     Button,
-    Header,
     Landing,
     Scroller,
     Socials,
@@ -41,5 +40,6 @@ export {
     VineBlurb,
     Countdown,
     BubbleButtons,
-    RecentPosts
+    RecentPosts,
+    ResourceItem,
 }
