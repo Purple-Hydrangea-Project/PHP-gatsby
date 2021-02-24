@@ -1,0 +1,71 @@
+@import "./main.scss";
+@import url("https://use.typekit.net/upg4lus.css");
+
+
+.blogpage {
+  font-family: $montserrat;
+  margin: auto;
+  width: 100vw;
+  justify-content: center;
+
+  .greenBox{
+    background-color:$pale-green;
+    width: 90%;
+    margin: 5% 2%;
+    vertical-align: center;
+    display: inline-flex;
+    padding: 2%;
+    max-width: 1310px;
+    // min-width: 320px;
+
+    .post{
+      background-color: $white;
+      width: 90%;
+      padding: 5%;
+      
+      h1 {
+        font-size: 3.0vw;
+      }
+
+      .meta, .postContent {
+        font-size: 1.6vw;
+        line-height: 2.2vw;
+        p {
+          margin-bottom: 1vw;
+        }
+      }
+
+      .meta {
+        line-height: 4.0vw;
+      }
+
+      .postFooter{
+        border-bottom: 2px solid $gray;
+        border-top: 2px solid $gray;
+        padding: 1%;
+        margin: 5% 0 2% 0;
+        display: inline-flex;
+        width: 98%;
+    
+        .likes{
+          text-align: right;
+          width: 60%;
+        }
+        
+        .socials{
+          width:40%;
+          display: flex;
+
+
+          .icon{
+            text-decoration: none;
+            color: black;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+

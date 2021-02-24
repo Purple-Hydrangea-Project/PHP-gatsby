@@ -53,18 +53,11 @@
 $montserrat: "Montserrat", sans-serif;
 
 //Colors
-// $coral: #ff534f;
-// $neon: #363fff;
-// $slate: #082a44;
-// $mustard: #fcb14b;
-// $teal: #00b8b9;
-// $violet: #452081;
 $primary-purple: #ABA7DD;
 $landing-purple: #514B91;
 $accent-text-purple: #7D78BE;
 $dark-text-purple: #181143;
 $pale-green: #8CC6C3;
-$mint-green: #BBE7E4;
 $dark-green: #348581;
 $white: #fff;
 $light-purple: #F1F1FC;
@@ -74,22 +67,69 @@ $gray: #F7EFED;
 //Grids
 
 //Styles
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 body {
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
   font-family: $montserrat;
   margin: 0;
-  text-align: center;
 }
 .section {
   margin: 0;
-  width: 80vw;
+  width: 100vw;
   display: flex;
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 5vw 10vw 5vw 10vw;
 }
 
 .row {
@@ -105,19 +145,10 @@ body {
   display: flex;
 }
 
-.heading {
-  font-size: 4em;
-}
-
-.subheading {
-  font-size: 3em;
-}
-
 .blogcards{
   display: flex;
   flex-wrap: wrap;
 }
-
 h1{
   text-align: center;
   font-size: 4em;

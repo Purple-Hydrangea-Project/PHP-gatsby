@@ -1,10 +1,17 @@
 @import "./../main.scss";
 
+.blogCard{  
+  width: 30%;
+  min-width: 200px;
+  max-width: 400px;
+  background-color: #ffffff;
+  margin: 2%;
+  text-align: left;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
 
-  
   .card{  
-    width: 30%;
-    min-width: 200px;
+    width: 75%;
+    min-width: 100px;
     max-width: 400px;
     background-color: #ffffff;
     margin: 2%;
@@ -17,39 +24,56 @@
       
       .info{
         padding: 5% 5% 10% 5%;
+        line-height: .25em;
+        @media (max-width: 500px){
+          padding: 2%;
+        }
+        h2{
+          @media (max-width: 500px) {
+            font-size: 1em;
+
+        }
+          
+        }
     
         h3{
             font-weight: normal;
+            @media (max-width: 500px) {
+              font-size: 1em;
+          }
+
         }
+      
     
         .excerpt{
             margin: 1.5em 0 0 0;
             font-style: italic;
-        }
-    
-        .num{
-            font-size: .5em;
-            font-weight: lighter;
-            float:right;
-        
-            .likes{
-                width: 10px;      
-              }
-            .like{
-              font-weight: lighter;
-              color: black;
-            }
+            @media (max-width: 500px) {
+              font-size: 0.75em;
           }
+        }
+      .like{
+        font-weight: lighter;
+        color: black;
       }
+    }
   }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+  h3{
+    font-weight: normal;
+  }
+  .excerpt{
+    margin: 1.5em 0 0 0;
+    font-style: italic;
+  }
+
+  .num{
+    font-size: .5em;
+    font-weight: lighter;
+    float:right;
+
+    .likes{
+      width: 10px;      
+    }
+  }
+}
