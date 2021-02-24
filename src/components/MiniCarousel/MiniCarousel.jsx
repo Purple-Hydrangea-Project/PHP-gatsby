@@ -30,12 +30,9 @@ var initial = true;
 window.addEventListener('resize', changeCarousel);
 
 var position = 2;
-
 function move(direction, resourceNum){
     
     if (direction === "right"){
-        
-       
         for (var i = 0; i < resourceNum; i++){
 
             var myResource = document.getElementById("resource" + i);
@@ -48,29 +45,20 @@ function move(direction, resourceNum){
                        
             myResource.style.order = resourcePos;
         }
-
-
     }
     else{
-
         for (var i = 0; i < resourceNum; i++){
-
             var myResource = document.getElementById("resource" + i);
             var currentPosition = parseInt(getComputedStyle(myResource).order);
             var resourcePos =  currentPosition - 1;
-            
             if (resourcePos < position){
                 resourcePos = position + resourceNum - 1;
-            }
-                       
+            }         
             myResource.style.order = resourcePos;
         }
-
     }
-
     changeCarousel();
 }
-
 
 function changeCarousel(){
     var resourcenum = 5;
@@ -79,42 +67,30 @@ function changeCarousel(){
         initial = false;
     }
     else{
+        var myresource;
+        if(window.innerWidth <= 400){
+            console.log("yeehaw");
+            
+            for (var i = 0; i < resourcenum; i++){
+                myresource = document.getElementById("resource" + i);
+                var currentposition = parseInt(getComputedStyle(myresource).order);
+                console.log(currentposition);
 
-    
-    var myresource;
-
-
-   
-    console.log(window.innerWidth);
-    console.log("test");
-
-    if(window.innerWidth <= 400){
-        console.log("yeehaw");
-        
-        for (var i = 0; i < resourcenum; i++){
-            myresource = document.getElementById("resource" + i);
-            var currentposition = parseInt(getComputedStyle(myresource).order);
-            console.log(currentposition);
-
-            if(currentposition === 5 || currentposition === 6)
-            {
-                myresource.style.display = "none";
+                if(currentposition === 5 || currentposition === 6)
+                {
+                    myresource.style.display = "none";
+                }
+                else{
+                    myresource.style.display = "block";
+                }
             }
-            else{
-                myresource.style.display = "block";
-            }
-        }
-
     }
     else{
         console.log("bigg");
         for (var j = 0; j < resourcenum; j++){
             myresource = document.getElementById("resource" + j);
             myresource.style.display = "block";
-           // document.getElementsByClassName("resource")[j].style.width = "10vw";
-            //document.getElementsByClassName("resource")[j].style.height = "10vw";
         }
     }
 }
-    
 }

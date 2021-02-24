@@ -6,8 +6,8 @@ import Heart from '../../../static/heart-thin.svg'
 
 export default class BlogPage extends React.Component {
   render() {
-      //const {author, date, blogtext, blogtitle, ...props} = this.props
-    return(
+    //const {author, date, blogtext, blogtitle, ...props} = this.props
+    return (
       <div class="blogpage">
         <div class="green-box">
           <div class="post">
@@ -21,7 +21,7 @@ export default class BlogPage extends React.Component {
               <div class="socials">
                 <Socials />
               </div>
-              <div class="likes"><img src={Heart}/></div>
+              <div class="likes"><img src={Heart} /></div>
             </div>
           </div>
         </div>

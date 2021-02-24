@@ -7,7 +7,6 @@ const Resource = (props) => {
     return (
         <div className="resource" id={"resource" + event.num.toString()} style={{backgroundImage: `url(${event.img})`}}>
             <a href={event.link} target="_blank"><p>{event.name}</p></a>
-            
         </div>
 
     )
