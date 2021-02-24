@@ -80,7 +80,7 @@ export default class Navbar extends React.Component {
         </div>
         <div className="navbar-mobile">
         <div style={styles.container}>
-          <MenuButton open={this.state.menuOpen} onClick={()=>this.handleMenuClick()} color='white'/>
+          <MenuButton open={this.state.menuOpen} onClick={()=>this.handleMenuClick()} color='white' style={{ float: 'right' }} />
           <div style={styles.logo}>The Purple Hydrangea Project</div>
         </div>
           <Menu open={this.state.menuOpen}>
