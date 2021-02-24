@@ -45,9 +45,12 @@ export default function Home() {
       <Carousel events={slide} />
       <Counter values={counterValues} duration={2000} />
       <h1>upcoming event name</h1>
-        <div className="row">
-            <div className="column">
+        <div className="event-row">
+            <div className="event-column">
               <Countdown />
+            </div>
+            <div className="event-column">
+              <p>event description goes here alkjdflakjdfalkdsjf</p>
             </div>
         </div>
       <h1>our partners</h1> 
