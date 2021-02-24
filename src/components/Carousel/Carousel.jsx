@@ -42,7 +42,6 @@ export default Carousel
 
 var currentPos = 0;
 function move(direction, resourceNum, backgroundImage){
-    console.log(backgroundImage);
     if (direction === "left"){
        currentPos--; 
        if(currentPos < 0){

@@ -62,19 +62,16 @@ function move(direction, resourceNum){
 
 function changeCarousel(){
     var resourcenum = 5;
-    console.log(initial);
     if (initial){
         initial = false;
     }
     else{
         var myresource;
         if(window.innerWidth <= 400){
-            console.log("yeehaw");
             
             for (var i = 0; i < resourcenum; i++){
                 myresource = document.getElementById("resource" + i);
                 var currentposition = parseInt(getComputedStyle(myresource).order);
-                console.log(currentposition);
 
                 if(currentposition === 5 || currentposition === 6)
                 {
@@ -86,7 +83,6 @@ function changeCarousel(){
             }
     }
     else{
-        console.log("bigg");
         for (var j = 0; j < resourcenum; j++){
             myresource = document.getElementById("resource" + j);
             myresource.style.display = "block";

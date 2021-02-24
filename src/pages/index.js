@@ -1,7 +1,7 @@
 import React from "react";
 import { useStaticQuery, graphql, Link } from "gatsby";
 import "../components/main.scss";
-import { Footer, Landing, Button, Card, BlogPage, BlogCard, Counter, TextCard, Feature, Accordion, Navbar, QuoteBox, VineBlurb, Countdown, BubbleButtons, MiniCarousel, Carousel } from '../components';
+import { Footer, Landing, Button, Card, BlogPage, BlogCard, Counter, TextCard, Feature, Accordion, Navbar, QuoteBox, VineBlurb, Countdown, BubbleButtons, MiniCarousel, Carousel, RecentPosts } from '../components';
 import Logo from '../../static/circle_logo.png';
 import Vine from '../../static/vineblurb.png';
 import StartQuote from '../../static/startquote.png';
@@ -115,6 +115,90 @@ export default function Home() {
     }
   ]
 
+  const blogs = [
+    {
+      num: 0,
+      image: {Logo},
+      title: "title0",
+      author: "author",
+      date: "date",
+      likes: 50,
+      excerpt: "excerpt"
+    },
+    {
+      num: 1,
+      image: {Logo},
+      title: "title1",
+      author: "author",
+      date: "date",
+      likes: 50,
+      excerpt: "excerpt"
+    },
+    {
+      num: 2,
+      image: {Logo},
+      title: "title2",
+      author: "author",
+      date: "date",
+      likes: 50,
+      excerpt: "excerpt"
+    },
+    {
+      num: 3,
+      image: {Logo},
+      title: "title3",
+      author: "author",
+      date: "date",
+      likes: 50,
+      excerpt: "excerpt"
+    },
+    {
+      num: 4,
+      image: {Logo},
+      title: "title4",
+      author: "author",
+      date: "date",
+      likes: 50,
+      excerpt: "excerpt"
+    },
+    {
+      num: 5,
+      image: {Logo},
+      title: "title5",
+      author: "author",
+      date: "date",
+      likes: 50,
+      excerpt: "excerpt"
+    },
+    {
+      num: 6,
+      image: {Logo},
+      title: "title6",
+      author: "author",
+      date: "date",
+      likes: 50,
+      excerpt: "excerpt"
+    },
+    {
+      num: 7,
+      image: {Logo},
+      title: "title7",
+      author: "author",
+      date: "date",
+      likes: 50,
+      excerpt: "excerpt"
+    },
+    {
+      num: 8,
+      image: {Logo},
+      title: "title8",
+      author: "author",
+      date: "date",
+      likes: 50,
+      excerpt: "excerpt"
+    }
+    
+  ]
 
 
 
@@ -153,6 +237,8 @@ export default function Home() {
         <BlogCard image="{Logo}" title="title2" author="author" date="date" likes="50" excerpt="excerpt" />
       </div>
       <Feature image="https://iarp.org/wp-content/uploads/2015/04/purple-1.jpg" title="my blog" author="me" date="today" likes="500" />
+
+      <RecentPosts events={blogs}/>
     </div>
   );
 }
