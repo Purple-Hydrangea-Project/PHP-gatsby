@@ -19,6 +19,7 @@ import { Countdown } from "./Countdown"
 import { BubbleButtons } from "./BubbleButtons"
 import { RecentPosts } from "./RecentPosts"
 import { ResourceItem } from "./ResourceItem"
+import { Partners } from "./Partners"
 
 export {
     Button,
@@ -42,4 +43,5 @@ export {
     BubbleButtons,
     RecentPosts,
     ResourceItem,
+    Partners,
 }

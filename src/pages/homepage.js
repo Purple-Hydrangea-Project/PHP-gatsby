@@ -1,6 +1,6 @@
 import React from "react";
 import "../components/main.scss";
-import { Footer, Landing, Counter, Navbar, VineBlurb, Countdown, Carousel } from '../components';
+import { Footer, Landing, Counter, Navbar, VineBlurb, Countdown, Carousel, Partners } from '../components';
 import Vine from '../../static/vineblurb.png';
 
 
@@ -53,7 +53,10 @@ export default function Home() {
               <p>event description goes here alkjdflakjdfalkdsjf</p>
             </div>
         </div>
-      <h1>our partners</h1> 
+      <h1>our partners</h1>
+        <Partners logo="https://cdn-images-1.medium.com/max/1200/1*3FpOUVGHsnVaFP58UiOjrw.png" alt="Google For Nonprofits" />
+        <Partners logo="https://images.squarespace-cdn.com/content/v1/5d2f54133c449e0001b2d230/1568749343346-4C5GKWA0R1GNGOPXNPSD/ke17ZwdGBToddI8pDm48kNsayAhmPBuTgnCITQel9MNZw-zPPgdn4jUwVcJE1ZvWhcwhEtWJXoshNdA9f1qD7dss-b_TPjOgQSEDNYV-zheQ5zlhyPMTNFLulshWbomYra4M5E9xGpVFKd7SsLSp_w/Google+Logo+250w.png" alt="Google For Nonprofits" />
+        <Partners logo="https://images.squarespace-cdn.com/content/v1/5d2f54133c449e0001b2d230/1568749343346-4C5GKWA0R1GNGOPXNPSD/ke17ZwdGBToddI8pDm48kNsayAhmPBuTgnCITQel9MNZw-zPPgdn4jUwVcJE1ZvWhcwhEtWJXoshNdA9f1qD7dss-b_TPjOgQSEDNYV-zheQ5zlhyPMTNFLulshWbomYra4M5E9xGpVFKd7SsLSp_w/Google+Logo+250w.png" alt="Google For Nonprofits" />
       <Footer />
     </div>
   );
