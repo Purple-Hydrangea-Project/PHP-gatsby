@@ -9,7 +9,7 @@ import Left from '../../../static/leftarrow.png';
 const MiniCarousel = (props) => {
     
     return (
-        <div className="minicarousel">
+        <div className="minicarousel" onLoaded={()=> window.addEventListener('resize', changeCarousel)}>
             <img id="left" className="arrow" src={Left} onClick={() => move("left", props.events.length)}/>
             
             
@@ -22,10 +22,13 @@ const MiniCarousel = (props) => {
 
             <img id="right" className="arrow" src={Right} onClick={() => move("right", props.events.length)}/>
         </div>
+        
     )
+    
 }
 
 export default MiniCarousel
+
 var initial = true;
 window.addEventListener('resize', changeCarousel);
 
@@ -89,4 +92,4 @@ function changeCarousel(){
         }
     }
 }
-}
+} 
