@@ -1,7 +1,7 @@
 import React from "react";
 import "../components/main.scss";
 import { Footer, Landing, Counter, Navbar, VineBlurb, Countdown, Carousel, Partners } from '../components';
-import Vine from '../../static/vineblurb.png';
+import Vine from '../../static/vineblurb.png'
 
 
 export default function Home() {
@@ -38,10 +38,7 @@ export default function Home() {
     <div>
       <Navbar />
       <Landing />
-      <div className="vine-section">
-        <VineBlurb className="vine-img" img={Vine} />
-      </div>
-         <h2 className="blurb">This is a little blurb</h2>
+        <VineBlurb img={Vine} alt="Vines" blurb="this is the coolest blurb" />
       <Carousel events={slide} />
       <Counter values={counterValues} duration={2000} />
       <h1>upcoming event name</h1>
