@@ -2,10 +2,10 @@
     display: inline-flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-left: 5em;
-    margin-right: 5em;
+    margin: auto;
+    justify-content: center;
 }
 
 .partners-grid img{
-    width: 15em;
+    width: 16em;
 }
