@@ -1,8 +1,8 @@
 import React from "react";
 import { useStaticQuery, graphql, Link } from "gatsby";
 import "../components/main.scss";
+import '../components/pages.scss';
 import { Footer, BlogCard, Navbar } from '../components';
-import Logo from '../../static/circle_logo.png';
 
 export default function Home() {
 
@@ -45,10 +45,7 @@ export default function Home() {
               <div className="blog-card-list">
                 <Link to={`/blog/${edge.node.slug}/`}></Link><BlogCard image={edge.node.photo.file.url} title={edge.node.title} author={edge.node.author} date={edge.node.datePublished} likes="50" excerpt="excerpt" />
               </div>
-              
-                
-              
-              </>
+            </>
           )
         })}
             
