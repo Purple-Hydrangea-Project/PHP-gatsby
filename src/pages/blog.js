@@ -9,16 +9,18 @@ export default function Home() {
     const data = useStaticQuery(
         graphql`
       query {
-        allContentfulBlogPost(sort: {
-          fields: datePublished,
-          order: DESC
-        }) {
+        allContentfulBlogPost(sort: {fields: datePublished, order: DESC}) {
           edges {
             node {
               author
               datePublished(formatString: "MMMM Do, YYYY")
               title
               slug
+              photo {
+                file {
+                  url
+                }
+              }
             }
           }
         }
@@ -27,7 +29,7 @@ export default function Home() {
     )
 
     return (
-        <div>
+        <div className="blogListPage">
             <Navbar />
             <div className="featured-blog">
                 <img src="https://source.unsplash.com/random/1400x600" width="100%" />
@@ -41,7 +43,7 @@ export default function Home() {
           return (
             <>
               <div className="blog-card-list">
-                <Link to={`/blog/${edge.node.slug}/`}></Link><BlogCard image={Logo} title={edge.node.title} author={edge.node.author} date={edge.node.datePublished} likes="50" excerpt="excerpt" />
+                <Link to={`/blog/${edge.node.slug}/`}></Link><BlogCard image={edge.node.photo.file.url} title={edge.node.title} author={edge.node.author} date={edge.node.datePublished} likes="50" excerpt="excerpt" />
               </div>
               
                 
