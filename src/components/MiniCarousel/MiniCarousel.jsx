@@ -4,7 +4,15 @@ import Resource from './Resource'
 import Right from '../../../static/rightarrow.png';
 import Left from '../../../static/leftarrow.png';
 
+// export default function MiniCarousel() {
+//     const initial = true;
+//     const position = 2;
+//     move(direction, total) {
+//         if (direction === "left") {
 
+//         }
+//     }
+// }
 
 const MiniCarousel = (props) => {
 
@@ -13,7 +21,7 @@ const MiniCarousel = (props) => {
 var position = 2;
 function move(direction, resourceNum){
     
-    if (direction === "right"){
+    if (direction === "left"){
         for (var i = 0; i < resourceNum; i++){
 
             var myResource = document.getElementById("resource" + i);

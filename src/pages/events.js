@@ -32,13 +32,16 @@ const events = [
     }
   ]
 
+  const images = ['https://ichef.bbci.co.uk/news/1024/cpsprodpb/151AB/production/_111434468_gettyimages-1143489763.jpg', 'https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/cat_relaxing_on_patio_other/1800x1200_cat_relaxing_on_patio_other.jpg', 'https://outwardhound.com/furtropolis/wp-content/uploads/2020/03/Doggo-Lingo-Post.jpg', 'https://doggo.com/wp-content/uploads/2017/12/dog-cheeks-585x300.png']
+  const captions = ['something', 'catto', 'doggo']
+
 export default function Events() {
   return (
   <div>
     <Navbar />
     <h1 className="purple">upcoming events</h1>
     <Accordion events={events} />
-    <Carousel events={slide} />
+    <Carousel backgroundImages={images} captions={captions} />
     <h1>past events</h1>
     <div className="section row">
         {events.map(event => {
