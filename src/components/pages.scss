@@ -52,7 +52,7 @@
       @include respond(tab-port) {
         width: 100%;
       }
-      
+
       h4 {
         font-weight: 600;
         font-size: 35px;
@@ -65,7 +65,6 @@
 
       .default {
         margin: 2.2vw auto 4.4vw auto;
-
       }
     }
 
@@ -89,13 +88,15 @@
       font-weight: 600;
       font-size: 35px;
     }
-  
+
     p {
       margin: 2.222vw 2.222vw 6.6vw 2.222vw;
       font-style: italic;
     }
 
-    .left, .middle, .right {
+    .left,
+    .middle,
+    .right {
       min-height: 280px;
       padding: 3.472vw;
       display: flex;
@@ -129,19 +130,33 @@
   .featured-blog {
     position: relative;
   }
-  
-  .featured-blog div{
+
+  .featured-blog div {
     text-align: left;
   }
-  
-  .featured-blog h2{
-    color: $accent-text-purple;
+
+  .featured-blog h2 {
+    color: black;
+    font-size: 3rem;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 2;
   }
-  
-  .featured-blog img{
+  @media (max-width: 768px) {
+    .featured-blog h2 {
+      font-size: 2rem;
+    }
+  }
+  @media (max-width: 640px) {
+    .featured-blog h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .featured-blog img {
     opacity: 0.5;
   }
-  
+
   .bottom-left {
     position: absolute;
     bottom: 8px;
@@ -149,11 +164,16 @@
     margin: 40px;
     padding: 10px;
   }
-  
-  .blog-card-list {
+
+  .blogCardList {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-  }  
+  }
+ 
+  .blogCardLink {
+    text-decoration: none;
+    color: black;
+  }
 }

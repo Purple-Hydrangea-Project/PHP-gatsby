@@ -16,6 +16,9 @@ export default function Home() {
               datePublished(formatString: "MMMM Do, YYYY")
               title
               slug
+              excerpt {
+                excerpt
+              }
               photo {
                 file {
                   url
@@ -42,8 +45,8 @@ export default function Home() {
             {data.allContentfulBlogPost.edges.map(edge => {
           return (
             <>
-              <div className="blog-card-list">
-                <Link to={`/blog/${edge.node.slug}/`}></Link><BlogCard image={edge.node.photo.file.url} title={edge.node.title} author={edge.node.author} date={edge.node.datePublished} likes="50" excerpt="excerpt" />
+              <div className="blogCardList">
+                <Link className="blogCardLink" to={`/blog/${edge.node.slug}/`}><BlogCard className="blogCardCard" image={edge.node.photo.file.url} title={edge.node.title} author={edge.node.author} date={edge.node.datePublished} likes="50" excerpt={edge.node.excerpt.excerpt} /></Link>
               </div>
             </>
           )
