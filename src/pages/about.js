@@ -6,10 +6,10 @@ import StartQuote from '../../static/startquote.png';
 import EndQuote from '../../static/endquote.png';
 import '../components/main.scss'
 
-export default function Home() {
+export default function About() {
 
-    const data = useStaticQuery(
-        graphql`
+  const data = useStaticQuery(
+    graphql`
       query {
         allContentfulTeamMember {
           edges {
@@ -29,7 +29,7 @@ export default function Home() {
         }
       }
     `
-    )
+  )
 
     return (
         <div>

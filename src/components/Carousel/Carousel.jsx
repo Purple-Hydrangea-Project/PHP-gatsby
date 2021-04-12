@@ -12,18 +12,23 @@ import Left from '../../../static/leftarrow.png';
 // <Circles><Circle className={</Circles>
 
 export default function Carousel(backgroundImages, captions) {
-    console.log(typeof(backgroundImages));
-    console.log(backgroundImages);
-    const bgImages = backgroundImages;
-    const caption = captions;
-    const length = backgroundImages.length;
+    const bgImages = backgroundImages.backgroundImages;
+    const caption = backgroundImages.captions;
+    const length = backgroundImages.backgroundImages.length;
 
     const [indexShown, setShown] = useState(0);
     function increment(indexShown) {
-        indexShown < length ? setShown(indexShown++) : setShown(0);
+        console.log(indexShown + " og");
+        indexShown < (length - 1) ? setShown(indexShown + 1) : setShown(0);
+        indexShown < (length - 1) ? console.log("plus") : console.log("0");
+        console.log(indexShown);
     }
     function decrement(indexShown) {
-        indexShown > 0 ? setShown(indexShown--) : setShown(length);
+        console.log(indexShown + " og");
+        indexShown > 0 ? setShown(indexShown - 1) : setShown(length-1);
+        indexShown < 0 ? console.log("--") : console.log("the og length");
+        
+        console.log(indexShown);
     }
 
     // let circles = [];
@@ -34,13 +39,13 @@ export default function Carousel(backgroundImages, captions) {
 
     return (
         <div className="carousel">
-            <img className="arrowLeft" onClick={increment(indexShown)} src={Left} />
+            <img className="arrowLeft" onClick={() => decrement(indexShown)} src={Left} />
             <img src={bgImages[indexShown]} />
             {caption[indexShown] ? <p className="caption">{caption[indexShown]}</p> : null}
             {/* <div className="circles">
                 {circles}
             </div> */}
-            <img className="arrowRight" onClick={decrement(indexShown)} src={Right} />
+            <img className="arrowRight" onClick={() => increment(indexShown)} src={Right} />
         </div>
     );
 }
