@@ -2,7 +2,8 @@ import React from "react";
 import { useStaticQuery, graphql, Link } from "gatsby";
 import "../components/main.scss";
 import '../components/pages.scss';
-import { Footer, BlogCard, Navbar } from '../components';
+import { Footer, BlogCard, Navbar, Feature } from '../components';
+
 
 export default function Home() {
 
@@ -34,13 +35,8 @@ export default function Home() {
     return (
         <div className="blogListPage">
             <Navbar />
-            <div className="featured-blog">
-                <img src="https://source.unsplash.com/random/1400x600" width="100%" />
-                <div className="bottom-left">
-                    <Link to="/blog/change-through-will-within"><h2>Change Through Will Within</h2></Link>
-                    <p>Olivia Guerra</p>
-                    <p>April 23rd, 2020</p>
-                </div>
+            <div>
+                <Feature image="https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg" title="Change through Will Within" author="Olivia Guerra" date="April 23, 2020" likes="10" />
             </div>
             {data.allContentfulBlogPost.edges.map(edge => {
           return (
