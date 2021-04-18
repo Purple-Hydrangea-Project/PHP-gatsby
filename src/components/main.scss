@@ -145,30 +145,9 @@ body {
   display: flex;
 }
 
-.blogcards{
-  display: flex;
-  flex-wrap: wrap;
-}
-
-h1{
-  text-align: center;
-  font-size: 4em;
-}
-
 .purple{
   color: $landing-purple;
 }
 
-.event-column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-}
 
-.event-row {
-  display: flex;
-  margin: auto;
-  text-align: center;
-  padding: 1rem;
-}
 

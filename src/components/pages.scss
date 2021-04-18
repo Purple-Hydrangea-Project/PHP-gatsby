@@ -127,53 +127,25 @@
 }
 
 .blogListPage {
-  .featured-blog {
-    position: relative;
-  }
-
-  .featured-blog div {
-    text-align: left;
-  }
-
-  .featured-blog h2 {
-    color: black;
-    font-size: 3rem;
-    text-decoration: none;
-    font-weight: bold;
-    line-height: 2;
-  }
-  @media (max-width: 768px) {
-    .featured-blog h2 {
-      font-size: 2rem;
-    }
-  }
-  @media (max-width: 640px) {
-    .featured-blog h2 {
-      font-size: 1.5rem;
-    }
-  }
-
-  .featured-blog img {
-    opacity: 0.5;
-  }
-
-  .bottom-left {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-    margin: 40px;
-    padding: 10px;
-  }
 
   .blogCardList {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-self: center;
   }
  
   .blogCardLink {
     text-decoration: none;
     color: black;
+  }
+
+  .blogCardCard {
+    padding: 5px;
+    justify-self: center;
+  }
+  @media screen and (max-width: 600px) {
+    .blogCardList {
+      grid-template-columns: 1fr;
+    }
   }
 }
