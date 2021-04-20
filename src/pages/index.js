@@ -211,7 +211,6 @@ export default function Home() {
       </div>
       <Accordion events={events} />
       <Button text="hello" link="/blogpage" size="default" />
-      {/* <BlogPage /> */}
       <div className="section row">
         {data.allContentfulTeamMember.edges.map(edge => {
           return (
