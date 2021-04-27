@@ -209,7 +209,7 @@ export default function Home() {
     <div>
       <Navbar />
       <Landing />
-      <MiniCarousel events={resource} />
+      {/* <MiniCarousel events={resource} /> */}
       <Carousel backgroundImages={images} captions={captions} />
       <div className="section row">
         <Countdown />

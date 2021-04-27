@@ -7,6 +7,7 @@
     margin: auto;
     grid-template-columns: repeat(3, 2fr);
     grid-template-rows: 1fr;
+
     background-color: white;
     opacity: 0.8;
     width: 100%;
@@ -18,12 +19,6 @@
     padding-bottom: 10px;
     padding-top: 50px;
 
-    #left{
-        order: 1;
-    }
-    #right{
-        order: 3;
-    }
     .arrow{
         width: 20%;
         height: auto;
@@ -33,37 +28,21 @@
     }
 
     p{
-        font-size: 1.75em;
+        font-size: 2em;
         text-align: center;
         align-content: center;
         margin: auto;     
-        order: 2;
         width: 100%;
         min-width: 70vw;
+        font-weight: 500;
+        -webkit-text-stroke: 0.25px white; 
     }
-    // #slide0{
-    //     display: block;
-    // }
-    // #slide1{
-    //     display: none;
-    // }
-    // #slide2{
-    //     display: none;
-    // }
-    // #slide3{
-    //     display: none;
-    // }
-    // #slide4{
-    //     display: none;
-    // }
-
     
     .slide {
         font-size: 1.75em;
         text-align: center;
         align-content: center;
         margin: auto;     
-        order: 2;
         width: 100%;
         min-width: 70vw;
         p{
@@ -72,9 +51,6 @@
         
     }
 
-    // .space{
-    //     order: 4;
-    // }
     .carousel-circles{
         display: inline-flex;
         margin: auto;
