@@ -4,10 +4,10 @@ import "../components/main.scss";
 import { Card, Navbar, TextCard, QuoteBox, Footer } from '../components';
 import '../components/main.scss'
 
-export default function Home() {
+export default function About() {
 
-    const data = useStaticQuery(
-        graphql`
+  const data = useStaticQuery(
+    graphql`
       query {
         allContentfulTeamMember {
           edges {
@@ -27,7 +27,7 @@ export default function Home() {
         }
       }
     `
-    )
+  )
 
     return (
         <div>

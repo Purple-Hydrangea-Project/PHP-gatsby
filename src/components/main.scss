@@ -145,6 +145,19 @@ body {
   display: flex;
 }
 
+.blogcards{
+  display: flex;
+  flex-wrap: wrap;
+}
+h1{
+  text-align: center;
+  font-size: 4em;
+}
+
+.eventsHeading{
+  margin-top: 150px;
+  font-weight: bold;
+}
 .purple{
   color: $landing-purple;
 }

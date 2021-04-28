@@ -7,7 +7,7 @@ import Vine from '../../static/vineblurb.png';
 import Finance from "../../static/icon-finance.png"
 import Marketing from "../../static/icon-marketing.png"
 import TechDev from "../../static/icon-tech.png"
-import Outreach from "../../static/icon-Outreach.png"
+import Outreach from "../../static/icon-outreach.png"
 import Creative from "../../static/icon-creative.png"
 
 
@@ -198,20 +198,22 @@ export default function Home() {
     
   ]
 
+  const images = ['https://source.unsplash.com/random', 'https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/cat_relaxing_on_patio_other/1800x1200_cat_relaxing_on_patio_other.jpg', 'https://outwardhound.com/furtropolis/wp-content/uploads/2020/03/Doggo-Lingo-Post.jpg', 'https://doggo.com/wp-content/uploads/2017/12/dog-cheeks-585x300.png']
+  const captions = ['something', 'catto', 'doggo']
+
 
 
   return (
     <div>
       <Navbar />
       <Landing />
-      <MiniCarousel events={resource} />
-      <Carousel events={slide} />
+      {/* <MiniCarousel events={resource} /> */}
+      <Carousel backgroundImages={images} captions={captions} />
       <div className="section row">
         <Countdown />
       </div>
       <Accordion events={events} />
       <Button text="hello" link="/blogpage" size="default" />
-      {/* <BlogPage /> */}
       <div className="section row">
         {data.allContentfulTeamMember.edges.map(edge => {
           return (

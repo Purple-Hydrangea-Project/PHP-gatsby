@@ -119,10 +119,12 @@
 
 .homepage {
   .partners-section {
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 8rem;
-    justify-content: center;
+    margin: 8rem auto;
+    .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }
 

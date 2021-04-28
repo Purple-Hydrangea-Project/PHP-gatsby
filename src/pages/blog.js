@@ -4,7 +4,7 @@ import "../components/main.scss"
 import "../components/pages.scss"
 import { Footer, BlogCard, Navbar, Feature } from "../components"
 
-export default function Home() {
+export default function Blog() {
   const data = useStaticQuery(
     graphql`
       query {
@@ -63,7 +63,6 @@ export default function Home() {
           )
         })}
       </div>
-
       <Footer />
     </div>
   )

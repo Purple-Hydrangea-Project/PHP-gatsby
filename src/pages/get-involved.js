@@ -3,7 +3,7 @@ import { Button, BubbleButtons, Navbar, Footer } from "./../components";
 import Finance from "../../static/icon-finance.png"
 import Marketing from "../../static/icon-marketing.png"
 import TechDev from "../../static/icon-tech.png"
-import Outreach from "../../static/icon-Outreach.png"
+import Outreach from "../../static/icon-outreach.png"
 import Creative from "../../static/icon-creative.png"
 
 export default function GetInvolved() {
