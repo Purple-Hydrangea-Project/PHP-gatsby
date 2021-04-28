@@ -3,20 +3,20 @@ import './QuoteBox.scss'
 
 export default class QuoteBox extends React.Component {
     render() {
-        const {startimg, endimg, text, credit} = this.props
+        const { text, credit } = this.props
         return (
             <div class="container">
                 <div>
                     <div className="col">
-                        <img src={startimg} alt="quotation" className="startquote"/>
+                        <img src="https://cloud-drhov6n9m-hack-club-bot.vercel.app/1startquote.png" alt="quotation" className="startquote"/>
                     </div>
                     <div className="quote">
                         <p>{text}</p>
                     </div>
                     <div className="col">
-                        <img src={endimg} alt="quotation" className="endquote"/>
+                        <img src="https://cloud-drhov6n9m-hack-club-bot.vercel.app/0endquote.png" alt="quotation" className="endquote"/>
                     </div>
-                </div>
+                </div><br/>
                 <div className="credit">
                     <p>{credit}</p>
                 </div>

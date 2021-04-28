@@ -1,7 +1,7 @@
 import React from "react";
 import { useStaticQuery, graphql, Link } from "gatsby";
 import "../components/main.scss";
-import { Footer, Card, BlogPage, BlogCard, TextCard, Navbar, QuoteBox } from '../components';
+import { Footer, BlogCard, Navbar } from '../components';
 import Logo from '../../static/circle_logo.png';
 
 export default function Blog() {

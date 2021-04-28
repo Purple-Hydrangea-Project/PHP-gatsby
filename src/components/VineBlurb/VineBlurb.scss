@@ -1,6 +1,6 @@
 @import "./../main.scss";
 
-.VineBlurb {
+.vineblurb {
     padding:  3rem;
     display: block;
     position: relative;
@@ -22,8 +22,16 @@
 .blurb {
     justify-content: center;
     left: 30%;
-    bottom: 250px;
+    bottom: 350px;
     display: inline-block;
     position: relative;
     margin: auto; 
+}
+  
+.vine-section {
+  position: relative;
+  margin-top: -200px;
+  height: 500px;
+  width: auto;
+  z-index: -2;
 }
