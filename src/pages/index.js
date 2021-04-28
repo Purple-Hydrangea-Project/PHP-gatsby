@@ -214,7 +214,7 @@ export default function Home() {
       <Accordion events={events} />
       <Button text="hello" link="/blogpage" size="default" />
       {/* <BlogPage /> */}
-      <div className="section row">
+      <div className="table">
         {data.allContentfulTeamMember.edges.map(edge => {
           return (
             <Card img={edge.node.image.file.url} title={edge.node.name} text={edge.node.blurb.blurb} />
