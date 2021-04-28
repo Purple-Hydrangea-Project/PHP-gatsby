@@ -4,7 +4,7 @@ import "../components/main.scss";
 import { Footer, BlogCard, Navbar } from '../components';
 import Logo from '../../static/circle_logo.png';
 
-export default function Home() {
+export default function Blog() {
 
   const data = useStaticQuery(
     graphql`

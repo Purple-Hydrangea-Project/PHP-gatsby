@@ -2,11 +2,12 @@ import React, { useState } from "react"
 import "./MiniCarousel.scss"
 
 const Resource = (props) => {
-    const event = props.eventObj;
-
+    const mycap = props.cap;
+    const myimg = props.backimg;
+    const mylink = props.mylink;
     return (
-        <div className="resource" id={"resource" + event.num.toString()} style={{backgroundImage: `url(${event.img})`}}>
-            <a href={event.link} target="_blank"><p>{event.name}</p></a>
+        <div className="resource" style={{backgroundImage: `url(${myimg})`}}>
+            <a href={mylink} target="_blank"><p class="caption">{mycap}</p></a>
         </div>
 
     )
