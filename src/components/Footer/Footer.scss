@@ -11,6 +11,10 @@
         flex-direction: column;
     }
 
+    .button {
+        margin: 2vw;
+    }
+
     .col {
         width: 25vw;
         display: flex;
@@ -38,7 +42,7 @@
         .title {
             font-weight: bold;
             font-size: 2em;
-            margin-bottom: 0px;
+            margin-bottom: 2vw;
         }
         .connect {
             font-size: 1em;
@@ -50,6 +54,7 @@
         .title {
             font-weight: bold;
             font-size: 1.5em;
+            line-height: 2em;
         }
         .contact {
             text-align: left;
@@ -57,7 +62,7 @@
         .newsletter {
             background-color: $dark-green;
             color: #fff;
-            margin: 0;
+            margin: 2vw;
             padding: 0.972vw;
             @include respond(tab-port) {
                 width: auto;

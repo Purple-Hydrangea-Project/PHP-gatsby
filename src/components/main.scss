@@ -154,77 +154,13 @@ h1{
   font-size: 4em;
 }
 
+.eventsHeading{
+  margin-top: 150px;
+  font-weight: bold;
+}
 .purple{
   color: $landing-purple;
 }
 
-.event-column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-}
 
-.event-row {
-  display: flex;
-  margin: auto;
-  text-align: center;
-  padding: 1rem;
-}
 
-// this was causing issues
-// .row::after {
-//   content: "event description";
-//   display: table;
-//   clear: both;
-//   padding: 150px 0;
-//   text-align: center;
-//   margin: auto;
-// }
-
-.vine-img {
-  z-index: -2;
-  width: auto;
-}
-
-.blurb {
-  text-align: center;
-  padding-bottom: 20px;
-}
-
-.vine-section {
-  position: relative;
-  margin-top: -200px;
-  height: 500px;
-  width: auto;
-  z-index: -2;
-}
-
-.featured-blog {
-  position: relative;
-}
-
-.featured-blog div{
-  text-align: left;
-}
-
-.featured-blog h2{
-  color: $accent-text-purple;
-}
-
-.featured-blog img{
-  opacity: 0.5;
-}
-
-.bottom-left {
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
-  margin: 40px;
-  padding: 10px;
-}
-
-.blog-card-list {
-  display: inline-flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}

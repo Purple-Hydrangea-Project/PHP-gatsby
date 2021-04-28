@@ -52,7 +52,7 @@
       @include respond(tab-port) {
         width: 100%;
       }
-      
+
       h4 {
         font-weight: 600;
         font-size: 35px;
@@ -65,7 +65,6 @@
 
       .default {
         margin: 2.2vw auto 4.4vw auto;
-
       }
     }
 
@@ -89,13 +88,15 @@
       font-weight: 600;
       font-size: 35px;
     }
-  
+
     p {
       margin: 2.222vw 2.222vw 6.6vw 2.222vw;
       font-style: italic;
     }
 
-    .left, .middle, .right {
+    .left,
+    .middle,
+    .right {
       min-height: 280px;
       padding: 3.472vw;
       display: flex;
@@ -115,7 +116,45 @@
     }
   }
 }
+<<<<<<< HEAD
 .table{
   display: table-row;
 
 }
+=======
+
+.homepage {
+  .partners-section {
+    margin: 8rem auto;
+    .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.blogListPage {
+
+  .blogCardList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-self: center;
+  }
+ 
+  .blogCardLink {
+    text-decoration: none;
+    color: black;
+  }
+
+  .blogCardCard {
+    padding: 5px;
+    justify-self: center;
+  }
+  @media screen and (max-width: 600px) {
+    .blogCardList {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+>>>>>>> ca89ff83bfc0824f2c64114c4a7873c2d1c83077

@@ -1,6 +1,6 @@
 import React from "react";
 import { useStaticQuery, graphql, Link } from "gatsby";
-import { BlogCard } from "../components"
+import { BlogCard, Card } from "../components"
 import Logo from '../../static/circle_logo.png';
 
 const Template = () => {

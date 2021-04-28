@@ -4,12 +4,10 @@ import "../components/main.scss";
 import { Footer, Landing, Button, Card, BlogPage, BlogCard, Counter, TextCard, Feature, Accordion, Navbar, QuoteBox, VineBlurb, Countdown, BubbleButtons, MiniCarousel, Carousel, RecentPosts } from '../components';
 import Logo from '../../static/circle_logo.png';
 import Vine from '../../static/vineblurb.png';
-import StartQuote from '../../static/startquote.png';
-import EndQuote from '../../static/endquote.png';
 import Finance from "../../static/icon-finance.png"
 import Marketing from "../../static/icon-marketing.png"
 import TechDev from "../../static/icon-tech.png"
-import Outreach from "../../static/icon-Outreach.png"
+import Outreach from "../../static/icon-outreach.png"
 import Creative from "../../static/icon-creative.png"
 
 
@@ -200,21 +198,28 @@ export default function Home() {
     
   ]
 
+  const images = ['https://source.unsplash.com/random', 'https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/cat_relaxing_on_patio_other/1800x1200_cat_relaxing_on_patio_other.jpg', 'https://outwardhound.com/furtropolis/wp-content/uploads/2020/03/Doggo-Lingo-Post.jpg', 'https://doggo.com/wp-content/uploads/2017/12/dog-cheeks-585x300.png']
+  const captions = ['something', 'catto', 'doggo']
+
 
 
   return (
     <div>
       <Navbar />
       <Landing />
-      <MiniCarousel events={resource} />
-      <Carousel events={slide} />
+      {/* <MiniCarousel events={resource} /> */}
+      <Carousel backgroundImages={images} captions={captions} />
       <div className="section row">
         <Countdown />
       </div>
       <Accordion events={events} />
       <Button text="hello" link="/blogpage" size="default" />
+<<<<<<< HEAD
       {/* <BlogPage /> */}
       <div className="table">
+=======
+      <div className="section row">
+>>>>>>> ca89ff83bfc0824f2c64114c4a7873c2d1c83077
         {data.allContentfulTeamMember.edges.map(edge => {
           return (
             <Card img={edge.node.image.file.url} title={edge.node.name} text={edge.node.blurb.blurb} />
@@ -224,7 +229,7 @@ export default function Home() {
       <Counter values={counterValues} duration={2000} />
       <TextCard alignment="left" text="The Purple Hydrangea Project is a student-run 501(c)3 nonprofit organization dedicated to advocating for mental health awareness in children and teens. In our fight to eliminate the stigma around mental health, we hope to move the community towards an environment of understanding in which everyone can feel safe in reaching out for help and speaking about their mental health struggles without fear of being judged, ignored, or shunned. " heading="our mission" img={Logo} />
       <TextCard alignment="right" text="We plan to fulfill our mission by coordinating and presenting mental health awareness assemblies in elementary, middle, and high schools, making care packages for youth in psychiatric wards, holding holiday toy drives for children that have been diagnosed as emotionally disturbed, publishing a crowd-sourced book of stories of recovery from people all over the country, facilitating a pen pal program for youth all around the world to establish personal connections with one another, enacting a mural in honor of suicide victims, running a website on which we share resources, knowledge, and professional and personal advice on dealing with mental health struggles, and more. " heading="what we do" img={Logo} />
-      <QuoteBox startimg={StartQuote} endimg={EndQuote} text="I think that the strength that one gains from trauma and struggle doesn't come from the experience alone; the strength is gained by using the pain one went through and transforming it into healing. I knew that it was a shot in the dark to take on such a huge project about something that is still so controversial, but who has ever made a difference in the world that played it safe?" credit="Madeleine Salem, the PHP President and Founder"/>
+      <QuoteBox text="I think that the strength that one gains from trauma and struggle doesn't come from the experience alone; the strength is gained by using the pain one went through and transforming it into healing. I knew that it was a shot in the dark to take on such a huge project about something that is still so controversial, but who has ever made a difference in the world that played it safe?" credit="Madeleine Salem, the PHP President and Founder"/>
       <VineBlurb img={Vine} text="This is a blurb" />
       <Footer />
       <BubbleButtons icon={Marketing} text="Marketing" />
