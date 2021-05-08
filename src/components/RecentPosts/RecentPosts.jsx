@@ -18,11 +18,11 @@ export default function MiniCarousel(props) {
     var myBlogs = [];
 
     function increment(firstBlog) {
-        firstBlog < (length - 1) ? setShown(firstBlog + 1) : setShown(0);
+        firstBlog < (length - 3) ? setShown(firstBlog + 3) : setShown(0);
         showBlogs();
     }
     function decrement(firstBlog) {
-        firstBlog > 0 ? setShown(firstBlog - 1) : setShown(length-1);
+        firstBlog > 0 ? setShown(firstBlog - 3) : setShown(length-3);
         showBlogs();
     }
 
@@ -33,25 +33,21 @@ export default function MiniCarousel(props) {
         
         for (var i = 0; i < toDisplay; i++) {
 
-            console.log(blog);
-
             var currentDisplay = i + firstBlog;
             if (currentDisplay >= length){
                 currentDisplay = i + firstBlog - length;
             }
 
             let blog = blogData[currentDisplay];
+            
 
-
-            myBlogs.push(<div className="recentBlogs">
-            <BlogCard image={blog.image} title={blog.title} author={blog.author} date={blog.date} likes={blog.likes} excerpt={blog.excerpt} />
-            </div>)
+            myBlogs.push(<BlogCard image={blog.image} title={blog.title} author={blog.author} date={blog.date} likes={blog.likes} excerpt={blog.excerpt} />)
         }
         
     }
 
     showBlogs();
-    console.log(myBlogs);
+
     return (
         <div className="recentPosts">
             <h1>Recent Posts</h1>
@@ -69,9 +65,9 @@ export default function MiniCarousel(props) {
             </div>
 
             <div className="blogArrows">
-                <img id="blogLeft" className="blogArrow" src={Left} onClick={() => increment(firstBlog)}/>
+                <img id="blogLeft" className="blogArrow" src={Left} onClick={() => decrement(firstBlog)}/>
                 <Button text="see all" link="/blogpage" size="default"/>
-                <img id="blogRight" className="blogArrow" src={Right} onClick={() => decrement(firstBlog)}/>
+                <img id="blogRight" className="blogArrow" src={Right} onClick={() => increment(firstBlog)}/>
             </div>
             
 

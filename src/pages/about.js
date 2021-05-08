@@ -32,6 +32,7 @@ export default function About() {
     return (
         <div>
             <Navbar />
+            <div className="belowNav">
             <h1 className="heading">about</h1>
             <TextCard
                 alignment="left"
@@ -45,6 +46,8 @@ export default function About() {
                 text="We plan to fulfill our mission by coordinating and presenting mental health awareness assemblies in elementary, middle, and high schools, making care packages for youth in psychiatric wards, holding holiday toy drives for children that have been diagnosed as emotionally disturbed, publishing a crowd-sourced book of stories of recovery from people all over the country, facilitating a pen pal program for youth all around the world to establish personal connections with one another, enacting a mural in honor of suicide victims, running a website on which we share resources, knowledge, and professional and personal advice on dealing with mental health struggles, and more."
 
             />
+            </div>
+            
             <div className="section row">
                 <iframe width="80%" height="500vw" src="https://www.youtube.com/embed/O_l14OpnyVU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>

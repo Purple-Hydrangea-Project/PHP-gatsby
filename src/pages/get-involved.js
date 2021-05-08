@@ -10,7 +10,10 @@ export default function GetInvolved() {
   return (
     <div className="getInvolved">
       <Navbar />
-      <h1>get involved</h1>
+      <div className="belowNav">
+        <h1>get involved</h1>
+      </div>
+      
       <div className="row">
         <div className="left">
           <h4>join our staff team</h4>

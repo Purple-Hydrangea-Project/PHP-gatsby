@@ -85,7 +85,7 @@ export default function Blog() {
   return (
     <div className="blogListPage">
       <Navbar />
-      <div>
+      <div className="belowNav">
         <Feature
           image="https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg"
           title="Change through Will Within"

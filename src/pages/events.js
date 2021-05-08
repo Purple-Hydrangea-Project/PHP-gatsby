@@ -59,8 +59,11 @@ export default function Events() {
   return (
   <div>
     <Navbar />
-    <h1 className="purple eventsHeading">upcoming events</h1>
-    <Accordion events={events} />
+    <div className="belowNav">
+      <h1 className="purple eventsHeading">upcoming events</h1>
+      <Accordion events={events} />
+    </div>
+    
     {/* <Carousel backgroundImages={images} captions={captions} /> */}
     <h1>past events</h1>
     <div className="section row">

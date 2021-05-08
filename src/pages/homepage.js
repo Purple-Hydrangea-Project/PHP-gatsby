@@ -41,7 +41,10 @@ export default function Home() {
   return (
     <div className="homepage">
       <Navbar />
-      <Landing />
+      <div className="belowNav">
+        <Landing />
+      </div>
+      
       <div className="section">
         <VineBlurb img={Vine} alt="Vines" blurb="this is the coolest blurb" />
       </div>
