@@ -21,22 +21,25 @@ export const query = graphql`
 const BlogPost = props => {
   const post = props.data.contentfulBlogPost.content.json
   return (
-    <div className="blogpage">
-      <Link to="/template/">Visit the Blog Page</Link>
-      <div className="greenBox">
-        <div className="post">
-          <h1>{props.data.contentfulBlogPost.title}</h1>
-          <span className="meta">
-            Posted on {props.data.contentfulBlogPost.datePublished} by {props.data.contentfulBlogPost.author}
-          </span>
-          <div className="postContent">
-            {documentToReactComponents(post)}
-          </div>
-          <div className="postFooter">
-            <div className="socials">
-              <Socials />
+    <div>
+      <div><Link to="/blog/">Visit the Blog Page</Link></div>
+      <div className="blogpage">
+      
+        <div className="greenBox">
+          <div className="post">
+            <h1>{props.data.contentfulBlogPost.title}</h1>
+            <span className="meta">
+              Posted on {props.data.contentfulBlogPost.datePublished} by {props.data.contentfulBlogPost.author}
+            </span>
+            <div className="postContent">
+              {documentToReactComponents(post)}
             </div>
-            <div className="likes"><img className="icon" src={Heart}/></div>
+            <div className="postFooter">
+              <div className="socials">
+                <Socials />
+              </div>
+              <div className="likes"><img className="icon" src={Heart}/></div>
+            </div>
           </div>
         </div>
       </div>
