@@ -33,6 +33,10 @@ export default function Home() {
     }
   ]
 
+  const images = ['https://source.unsplash.com/random', 'https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/cat_relaxing_on_patio_other/1800x1200_cat_relaxing_on_patio_other.jpg', 'https://outwardhound.com/furtropolis/wp-content/uploads/2020/03/Doggo-Lingo-Post.jpg', 'https://doggo.com/wp-content/uploads/2017/12/dog-cheeks-585x300.png']
+  const captions = ['something', 'catto', 'doggo']
+
+
   return (
     <div className="homepage">
       <Navbar />
@@ -42,7 +46,7 @@ export default function Home() {
       </div>
 
       <div className="section">
-        <Carousel events={slide} />
+      <Carousel backgroundImages={images} captions={captions} />
       </div>
 
       <div className="section">
@@ -72,4 +76,6 @@ export default function Home() {
         <Footer />
       </div>
   );
+  }
+
   }

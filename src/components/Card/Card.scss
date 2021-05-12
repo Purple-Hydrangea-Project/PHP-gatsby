@@ -9,6 +9,7 @@
     flex: 1;
     text-align: center;
     height: 100%;
+    display: table-cell;
     
     @include respond(tab-port) {
         width: 78.666vw;
