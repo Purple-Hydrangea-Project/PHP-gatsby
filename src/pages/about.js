@@ -30,7 +30,7 @@ export default function About() {
   )
 
     return (
-        <div>
+        <div className="about">
             <Navbar />
             <h1 className="heading">about</h1>
             <TextCard
@@ -53,7 +53,7 @@ export default function About() {
             </div>
             <div className="section">
                 <h2 className="subheading">meet the team</h2>
-                <div className="row">
+                <div className="cards">
                     {data.allContentfulTeamMember.edges.map(edge => {
                         return (
                             <Card img={edge.node.image.file.url} title={edge.node.name} text={edge.node.blurb.blurb} />

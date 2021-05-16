@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import "./Carousel.scss";
-import Slide from './Slide'
-import Circles from './Circles'
 import Right from '../../../static/rightarrow.png';
 import Left from '../../../static/leftarrow.png';
 
