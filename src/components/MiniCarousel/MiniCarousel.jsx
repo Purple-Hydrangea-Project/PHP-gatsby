@@ -26,12 +26,10 @@ export default function MiniCarousel(props) {
       })
 
     function increment(firstSlide) {
-        console.log(width + " width :)");
         firstSlide < (length - 1) ? setShown(firstSlide + 1) : setShown(0);
         showSlides();
     }
     function decrement(firstSlide) {
-        console.log(width + " width :)");
         firstSlide > 0 ? setShown(firstSlide - 1) : setShown(length-1);
         showSlides();
     }
@@ -44,9 +42,6 @@ export default function MiniCarousel(props) {
         if (width < 750){
             toDisplay = 3;
         }
-
-        console.log(toDisplay);
-
         
         for (var i = 0; i < toDisplay; i++) {
 
@@ -55,10 +50,8 @@ export default function MiniCarousel(props) {
                 currentDisplay = i + firstSlide - length;
             }
             mySlides.push(<Resource cap={caption[currentDisplay]} backimg = {bgImages[currentDisplay]} mylink={link[currentDisplay]}/>)
-            console.log(i + " time");
         }
         
-        console.log(mySlides);
     }
 
     showSlides();
