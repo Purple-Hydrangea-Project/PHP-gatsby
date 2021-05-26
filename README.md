@@ -7,11 +7,7 @@
   The Purple Hydrangea Project
 </h1>
 
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/Purple-Hydrangea-Project/PHP-gatsby/blob/master/LICENSE)
-[![GitHub last commit](https://img.shields.io/github/last-commit/google/skia.svg?style=flat)](https://github.com/Purple-Hydrangea-Project/PHP-gatsby/)
-[![GitHub contributors](https://img.shields.io/github/contributors/cdnjs/cdnjs.svg?style=flat)](https://github.com/Purple-Hydrangea-Project/PHP-gatsby/)  
-
-
+[![MIT License](https://img.shields.io/github/license/Purple-Hydrangea-Project/PHP-gatsby)](https://github.com/Purple-Hydrangea-Project/PHP-gatsby/blob/master/LICENSE)
 
 ## 🌼 About
 
