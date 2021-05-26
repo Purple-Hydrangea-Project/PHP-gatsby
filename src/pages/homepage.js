@@ -3,7 +3,6 @@ import "../components/main.scss";
 import { Footer, Landing, Counter, Navbar, VineBlurb, Countdown, Carousel, Partners } from '../components';
 import Vine from '../../static/vineblurb.png'
 
-
 export default function Home() {
 
   const counterValues = [
@@ -80,5 +79,6 @@ export default function Home() {
         <Footer />
       </div>
   );
+  }
 
   }

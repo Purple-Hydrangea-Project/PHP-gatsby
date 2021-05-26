@@ -119,4 +119,38 @@
 .table{
   display: table-row;
 
+.homepage {
+  .partners-section {
+    margin: 8rem auto;
+    .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.blogListPage {
+
+  .blogCardList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-self: center;
+    align-content: center;
+  }
+ 
+  .blogCardLink {
+    text-decoration: none;
+    color: black;
+  }
+
+  .blogCardCard {
+    padding: 5px;
+    justify-self: center;
+  }
+  @media screen and (max-width: 600px) {
+    .blogCardList {
+      grid-template-columns: 1fr;
+    }
+  }
 }

@@ -85,15 +85,17 @@ export default function Blog() {
   return (
     <div className="blogListPage">
       <Navbar />
-      <div className="belowNav">
-        <Feature
-          image="https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg"
-          title="Change through Will Within"
-          author="Olivia Guerra"
-          date="April 23, 2020"
-          likes="10"
-        />
-      </div>
+        <div className="belowNav">
+          <Link to="/blog/change-through-will-within">
+            <Feature
+              image="https://waypointrecoverycenter.com/wp-content/uploads/2019/06/The-Pink-Clouds-Dark-Side.jpg"
+              title="Change through Will Within"
+              author="Olivia Guerra"
+              date="April 23, 2020"
+              likes="10"
+            />
+          </Link>
+        </div>
       <RecentPosts events={blogs}/>
       <div className="blogCardList">
         {data.allContentfulBlogPost.edges.map(edge => {
