@@ -7,8 +7,6 @@
   The Purple Hydrangea Project
 </h1>
 
-[![MIT License](https://img.shields.io/github/license/Purple-Hydrangea-Project/PHP-gatsby)](https://github.com/Purple-Hydrangea-Project/PHP-gatsby/blob/master/LICENSE)
-
 ## 🌼 About
 
 The Purple Hydrangea Project is a student-run 501(c)3 nonprofit organization dedicated to advocating for mental health awareness in children and teens. In our fight to eliminate the stigma around mental health, we hope to move the community towards an environment of understanding in which everyone can feel safe in reaching out for help and speaking about their mental health struggles without fear of being judged, ignored, or shunned. 
