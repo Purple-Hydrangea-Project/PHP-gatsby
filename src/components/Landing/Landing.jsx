@@ -6,7 +6,9 @@ import { Scroller } from '../../components'
 const Landing = () => (
     <div className="landing">
         <img src={LandingPic} alt="Purple Hyndrangea Project" className="picture" />
-        <Scroller />
+        <a href="#blurb">
+            <Scroller />
+        </a>
     </div>
 )
 export default Landing
