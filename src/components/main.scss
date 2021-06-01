@@ -98,7 +98,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.25;
 }
 ol, ul {
 	list-style: none;
@@ -136,8 +136,21 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: auto;
   @include respond(tab-port) {
     flex-direction: column;
+  }
+  
+}
+
+.members{
+  padding: 0 15vw;
+  margin: auto;
+  @media screen and (min-width: 1400px) {
+    padding: 0 20vw;
+  }
+  @media screen and (max-width: 800px) {
+    padding: 0 5vw;
   }
 }
 
@@ -152,6 +165,7 @@ body {
 h1{
   text-align: center;
   font-size: 4em;
+  font-weight: bold;;
 }
 
 .eventsHeading{
@@ -162,5 +176,17 @@ h1{
 }
 
 .belowNav{
-  padding-top: 15vh;
+  padding-top: 22vh !important;
 }
+
+iframe{
+  padding: 5%;
+}
+
+.subheading{
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 2em;
+}
+
