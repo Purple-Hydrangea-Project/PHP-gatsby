@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./MiniCarousel.scss"
 import Resource from './Resource'
 import Right from '../../../static/rightarrow.png';
@@ -14,16 +14,14 @@ export default function MiniCarousel(props) {
     var mySlides = [];
 
     const [width, setDimensions] = useState(window.innerWidth);
-    console.log("intial " + width);
-      React.useEffect(() => {
-        function handleResize() {
-          setDimensions(window.innerWidth);
-          console.log(width);
-          showSlides();
-        }
     
-        window.onResize = handleResize;
-      })
+    function handleResize() {
+        setDimensions(window.innerWidth);
+        showSlides();
+    }
+        
+    window.addEventListener('resize', handleResize);
+
 
     function increment(firstSlide) {
         firstSlide < (length - 1) ? setShown(firstSlide + 1) : setShown(0);
@@ -41,6 +39,7 @@ export default function MiniCarousel(props) {
 
         if (width < 750){
             toDisplay = 3;
+
         }
         
         for (var i = 0; i < toDisplay; i++) {
