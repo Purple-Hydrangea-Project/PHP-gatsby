@@ -8,8 +8,10 @@
   top: 0;
   left: 0;
   width: calc(100vw - 7.638vw);
-  padding: 42px 3.819vw;
+  padding: 22px 3.819vw;
   background-color: $white;
+  margin-bottom: 100px;
+
   @include respond(tab-port) {
     display: none;
   }
@@ -25,13 +27,12 @@
     display: flex;
     justify-content: flex-end;
     .item {
-      margin: 0.278vh 0.556vw;
+      margin: 0.278vh;
       padding: 8px 1.806vw 0px 1.806vw;
       border-radius: 36px;
-      background-color: $pale-green;
       height: 40px;
       p {
-        font-size: 24px;
+        font-size: 18px;
         line-height: 29px;
         a {
           text-decoration: none;
@@ -48,4 +49,15 @@
   @include respond(tab-port) {
     display: block;
   }
+}
+
+.active-class {
+  padding: 8px 1.806vw 8px 1.806vw;
+  border-radius: 36px;
+  background-color: $pale-green;
+  height: 40px;
+  font-size: 18px;
+  line-height: 29px;
+  text-decoration: none;
+  color: inherit;
 }

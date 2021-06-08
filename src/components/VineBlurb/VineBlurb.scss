@@ -1,37 +1,26 @@
 @import "./../main.scss";
 
 .vineblurb {
-    padding:  3rem;
-    display: block;
-    position: relative;
-    align-items: center;
-    @include respond(tab-port) {
-        width: 80%;
-        margin: 1rem auto;
-    }
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: -28px;
+  margin-bottom: -28px;
 }
 
 .vine {
-    justify-content: center;
-    position: relative;
-    display: block;
-    margin: auto;
-    width: 90%;
+  height: 300px;
 }
 
 .blurb {
-    justify-content: center;
-    left: 30%;
-    bottom: 350px;
-    display: inline-block;
-    position: relative;
-    margin: auto; 
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.3em;
 }
-  
-.vine-section {
-  position: relative;
-  margin-top: -200px;
-  height: 500px;
-  width: auto;
-  z-index: -2;
+
+@media (max-width: 750px) {
+  .blurb {
+    font-size: 12px;
+  }
 }

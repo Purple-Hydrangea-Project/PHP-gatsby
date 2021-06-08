@@ -1,0 +1,30 @@
+@import "./main.scss";
+
+.eventSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.eventItem {
+    display: flex;
+    margin: 1rem;
+}
+
+.heading {
+    font-weight: 700;
+    font-family: $montserrat;
+    font-size: xx-large;
+    line-height: 2;
+}
+
+.section {
+    margin-bottom: 1.7rem;
+}
+
+@media (max-width: 900px) {
+    .eventSection {
+        flex-direction: column;
+    }
+}

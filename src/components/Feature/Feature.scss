@@ -5,7 +5,10 @@
     height: 96vh;
     padding: 2% 5%;
     display: flex;
-    contain: cover;
+
+    a {
+        text-decoration: none;
+    }
     
 
     .text{
@@ -13,10 +16,14 @@
         width: 100%;
         h1{
             font-size: 3em;
+            text-align: start;
+            text-decoration: none;
         }
         h2, h3{
             font-weight: normal;
-            line-height: 0.75em;
+            line-height: 2em;
+            text-decoration: none;
+            color: black;
         }
 
         .num{
