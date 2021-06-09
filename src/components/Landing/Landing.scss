@@ -1,26 +1,55 @@
 @import "./../main.scss";
 
-.landing {
-    background: $landing-purple;
-    width: 100%;
-    height: 100vh;
-    background-repeat: no-repeat;
-	padding: 0px;
-	background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    @include respond(tab-port) {
-        flex-direction: column;
-    }
-    
-    .picture {
-        height: 90%;
-        width: 75%;
-        margin: 0 auto;
-        @include respond(tab-port) {
-            width: 100%;
-            height: 30%;
-        }
-    }
+// .landing {
+//   background: $landing-purple;
+//   width: 100%;
+//   height: 100vh;
+//   background-repeat: no-repeat;
+//   padding: 0px;
+//   background-position: center;
+//   background-size: cover;
+//   display: flex;
+//   justify-content: center;
+//   @include respond(tab-port) {
+//     flex-direction: column;
+//   }
+// }
+
+.actual-main-section {
+  display: flex;
+  flex-direction: column;
+  height: 40rem;
+  background: rgb(173, 148, 232);
+  background: linear-gradient(
+    90deg,
+    rgba(173, 148, 232, 1) 0%,
+    rgba(136, 136, 229, 1) 100%
+  );
+  color: white;
+  text-align: center;
+}
+
+.main-landing-container {
+  position: absolute;
+  top: 20%;
+}
+
+.php-logo {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.big-title {
+  color: white;
+  padding-bottom: 20px;
+  font-size: 36px;
+  margin: 20px;
+}
+
+.main-subtitle {
+  font-size: 24px;
+  margin: 50px;
+  font-weight: 300;
+  line-height: 1.2em;
 }
