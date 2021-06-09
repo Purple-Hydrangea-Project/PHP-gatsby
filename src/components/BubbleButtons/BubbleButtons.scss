@@ -1,34 +1,51 @@
 @import "./../main.scss";
 
 .button-item {
-    height: 10vw;
-    min-width: 10vw;
+    height: 12vw;
+    width: 12vw;
+    min-width: 125px;
+    min-height: 125px;
     border-radius: 50%;
     border-style: none;
-    padding: 5px;
+    margin: 0.5vw 1vw;
     position: relative;
     background-color: #CDCDFF;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
     @include respond(tab-port) {
         height: 25.333vw;
-        min-width: 25.333vw;
+        width: 25.333vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 80px;
+        min-height: 80px;
     }
 
     img {
         width: 4.8vw;
         @include respond(tab-port) {
-            width: 9.067vw;
+            min-width: 25px;
         }
+        min-width: 50px;
+        height: auto;
     }
 
     .text-blurb {
         font-style: italic;
         font-family: $montserrat;
-        font-size: 20px;
+        font-size: 1vw;
         text-align: center;
+        @media (max-width: 900px){
+            font-size: 1.5vw;
+          }
+        @include respond(tab-port) {
+            font-size: 3vw;
+        }
     }
 
 }

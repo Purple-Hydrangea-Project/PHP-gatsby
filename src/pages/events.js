@@ -56,6 +56,8 @@ export default function Events() {
   )
   // const info = Object.keys(data['allContentfulEvent']['edges']['node'])
   // console.log("yeet", typeof data, info);
+  const images = ['https://source.unsplash.com/random', 'https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/cat_relaxing_on_patio_other/1800x1200_cat_relaxing_on_patio_other.jpg', 'https://outwardhound.com/furtropolis/wp-content/uploads/2020/03/Doggo-Lingo-Post.jpg', 'https://doggo.com/wp-content/uploads/2017/12/dog-cheeks-585x300.png']
+  const captions = ['something', 'catto', 'doggo']
   return (
   <div>
     <Navbar />
@@ -64,7 +66,7 @@ export default function Events() {
       <Accordion events={events} />
     </div>
     
-    {/* <Carousel backgroundImages={images} captions={captions} /> */}
+    <Carousel backgroundImages={images} captions={captions} />
     <h1>past events</h1>
     <div className="section row">
         {events.map(event => {

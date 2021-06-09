@@ -4,12 +4,19 @@
     position: relative;
     padding: 2rem;
     background-color: $primary-purple;
+    width: 55vw;
+    line-height: 1.25em;
+    margin: auto;
 }
 
 .quote {
     margin-left: 6rem;
     margin-right: 6rem;
     font-weight: bold;
+    @media (max-width: 800px){
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
 }
 
 .startquote {
