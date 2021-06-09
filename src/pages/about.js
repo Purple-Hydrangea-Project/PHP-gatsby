@@ -50,14 +50,14 @@ export default function About() {
             </div>
             
             <div className="section row">
-                <iframe width="80%" height="500vw" src="https://www.youtube.com/embed/O_l14OpnyVU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="896vw" height="504vw" src="https://www.youtube.com/embed/O_l14OpnyVU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div className="section row">
                 <QuoteBox text="I think that the strength that one gains from trauma and struggle doesn't come from the experience alone; the strength is gained by using the pain one went through and transforming it into healing. I knew that it was a shot in the dark to take on such a huge project about something that is still so controversial, but who has ever made a difference in the world that played it safe?" credit="Madeleine Salem, the PHP President and Founder" />
             </div>
             <div className="section">
                 <h2 className="subheading">meet the team</h2>
-                <div className="cards">
+                <div className="row members">
                     {data.allContentfulTeamMember.edges.map(edge => {
                         return (
                             <Card img={edge.node.image.file.url} title={edge.node.name} text={edge.node.blurb.blurb} />

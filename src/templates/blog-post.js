@@ -2,7 +2,7 @@ import React from "react";
 import { graphql, Link } from "gatsby";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import "./../components/templates.scss";
-import { Socials } from '../components/index';
+import { Navbar, Socials, Footer, RecentPosts } from '../components/index';
 import Heart from '../../static/heart-thin.svg';
 
 export const query = graphql`
@@ -19,11 +19,13 @@ export const query = graphql`
 `
 
 const BlogPost = props => {
+  
   const post = props.data.contentfulBlogPost.content.json
   return (
     <div>
+      <Navbar />
       <div><Link to="/blog/">Visit the Blog Page</Link></div>
-      <div className="blogpage">
+      <div className="blogpage belowNav">
       
         <div className="greenBox">
           <div className="post">
@@ -42,7 +44,9 @@ const BlogPost = props => {
             </div>
           </div>
         </div>
+        {/* <RecentPosts /> */}
       </div>
+      <Footer />
     </div>
   )
 }
