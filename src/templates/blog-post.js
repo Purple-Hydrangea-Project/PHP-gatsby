@@ -18,6 +18,58 @@ export const query = graphql`
   }
 `
 
+const blogs = [
+  {
+    image: 'https://ichef.bbci.co.uk/news/1024/cpsprodpb/151AB/production/_111434468_gettyimages-1143489763.jpg',
+    title:"here's a blog guys",
+    excerpt:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    date: "4/10/2003",
+    likes: 50
+  },
+  {
+    image: 'https://ichef.bbci.co.uk/news/1024/cpsprodpb/151AB/production/_111434468_gettyimages-1143489763.jpg',
+    title:"two here's a blog guys",
+    excerpt:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    date: "4/10/2003",
+    likes: 50
+  },
+  {
+    image: 'https://ichef.bbci.co.uk/news/1024/cpsprodpb/151AB/production/_111434468_gettyimages-1143489763.jpg',
+    title:"three here's a blog guys",
+    excerpt:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    date: "4/10/2003",
+    likes: 50
+  },
+  {
+    image: 'https://ichef.bbci.co.uk/news/1024/cpsprodpb/151AB/production/_111434468_gettyimages-1143489763.jpg',
+    title:" four here's a blog guys",
+    excerpt:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    date: "4/10/2003",
+    likes: 50
+  },
+  {
+    image: 'https://ichef.bbci.co.uk/news/1024/cpsprodpb/151AB/production/_111434468_gettyimages-1143489763.jpg',
+    title:"five here's a blog guys",
+    excerpt:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    date: "4/10/2003",
+    likes: 50
+  },
+  {
+    image: 'https://ichef.bbci.co.uk/news/1024/cpsprodpb/151AB/production/_111434468_gettyimages-1143489763.jpg',
+    title:"six here's a blog guys",
+    excerpt:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    date: "4/10/2003",
+    likes: 50
+  },
+  {
+    image: 'https://ichef.bbci.co.uk/news/1024/cpsprodpb/151AB/production/_111434468_gettyimages-1143489763.jpg',
+    title:"seven here's a blog guys",
+    excerpt:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    date: "4/10/2003",
+    likes: 50
+  }
+]
+
 const BlogPost = props => {
   
   const post = props.data.contentfulBlogPost.content.json
@@ -44,7 +96,7 @@ const BlogPost = props => {
             </div>
           </div>
         </div>
-        {/* <RecentPosts /> */}
+        <RecentPosts />
       </div>
       <Footer />
     </div>

@@ -10,7 +10,7 @@
   width: calc(100vw - 7.638vw);
   padding: 22px 3.819vw;
   background-color: $white;
-  margin-bottom: 100px;
+  margin-bottom: 0;
 
   @include respond(tab-port) {
     display: none;

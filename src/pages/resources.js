@@ -57,11 +57,10 @@ export default function Resources() {
     <div className="resources">
       <Navbar />
       <div className="belowNav">
-      <h1>resources</h1>
-      {/* <MiniCarousel events={resource} /> */}
+      <h1 className="purple heading">resources</h1>
       </div>
       
-      <MiniCarousel backgroundImages={miniimages} captions={minicaptions} links={minilinks}/>
+      {/* <MiniCarousel backgroundImages={miniimages} captions={minicaptions} links={minilinks}/> */}
       {resourceItems}
       {resourceItems}
       {resourceItems}

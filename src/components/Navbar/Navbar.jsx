@@ -67,7 +67,7 @@ export default class Navbar extends React.Component {
       "/blog",
       "/get-involved",
       "/about",
-      "/donate",
+      "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NVPLRCAYXUMEE&source=url",
     ]
     const mobileMenuItems = menu.map((val, index) => {
       return (

@@ -14,7 +14,7 @@ export default class BlogCard extends React.Component {
                     <img src={image} className="img" />
                 </div>
                 <div className="blogCardMeta">
-                    <h2 className="title">{title} <b className="num" ><img className="likes" id={title} onClick={() => heartClick(title, likes)} src='heart-thin.svg' /><b className="like" id={title + "likes"}>{likes}</b></b></h2>
+                    <h2 className="title">{title} <b className="num" ><img className="likes" id={title} onClick={() => heartClick(title, likes)} src='heart-thin.svg' /><b className="like" id={title + "likes"}></b></b></h2>
                     <br/><h3 className="author">{author}</h3>
                     <p className="date">{date}</p>
                     <p className="excerpt">{excerpt}</p>
@@ -32,7 +32,7 @@ export default class BlogCard extends React.Component {
                 myHeart.src = 'heart-thin.svg';
             }
 
-            document.getElementById(mytitle + "likes").innerHTML = likenum;
+            //document.getElementById(mytitle + "likes").innerHTML = likenum;
         }
     }
 }

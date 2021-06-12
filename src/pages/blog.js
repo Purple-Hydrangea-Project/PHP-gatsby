@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import "../components/main.scss"
 import "../components/pages.scss"
-import { Footer, BlogCard, Navbar, Feature, RecentPosts } from "../components"
+import { Footer, BlogCard, Navbar, Feature } from "../components"
 
 export default function Blog() {
   const data = useStaticQuery(
@@ -30,58 +30,6 @@ export default function Blog() {
     `
   )
 
-  const blogs = [
-    {
-      image: 'https://ichef.bbci.co.uk/news/1024/cpsprodpb/151AB/production/_111434468_gettyimages-1143489763.jpg',
-      title:"here's a blog guys",
-      excerpt:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      date: "4/10/2003",
-      likes: 50
-    },
-    {
-      image: 'https://ichef.bbci.co.uk/news/1024/cpsprodpb/151AB/production/_111434468_gettyimages-1143489763.jpg',
-      title:"two here's a blog guys",
-      excerpt:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      date: "4/10/2003",
-      likes: 50
-    },
-    {
-      image: 'https://ichef.bbci.co.uk/news/1024/cpsprodpb/151AB/production/_111434468_gettyimages-1143489763.jpg',
-      title:"three here's a blog guys",
-      excerpt:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      date: "4/10/2003",
-      likes: 50
-    },
-    {
-      image: 'https://ichef.bbci.co.uk/news/1024/cpsprodpb/151AB/production/_111434468_gettyimages-1143489763.jpg',
-      title:" four here's a blog guys",
-      excerpt:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      date: "4/10/2003",
-      likes: 50
-    },
-    {
-      image: 'https://ichef.bbci.co.uk/news/1024/cpsprodpb/151AB/production/_111434468_gettyimages-1143489763.jpg',
-      title:"five here's a blog guys",
-      excerpt:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      date: "4/10/2003",
-      likes: 50
-    },
-    {
-      image: 'https://ichef.bbci.co.uk/news/1024/cpsprodpb/151AB/production/_111434468_gettyimages-1143489763.jpg',
-      title:"six here's a blog guys",
-      excerpt:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      date: "4/10/2003",
-      likes: 50
-    },
-    {
-      image: 'https://ichef.bbci.co.uk/news/1024/cpsprodpb/151AB/production/_111434468_gettyimages-1143489763.jpg',
-      title:"seven here's a blog guys",
-      excerpt:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      date: "4/10/2003",
-      likes: 50
-    }
-  ]
-
   return (
     <div className="blogListPage">
       <Navbar />
@@ -96,7 +44,6 @@ export default function Blog() {
             />
           </Link>
         </div>
-      <RecentPosts events={blogs}/>
       <div className="blogCardList">
         {data.allContentfulBlogPost.edges.map(edge => {
           return (

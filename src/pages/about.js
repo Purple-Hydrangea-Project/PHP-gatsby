@@ -33,7 +33,7 @@ export default function About() {
         <div className="about">
             <Navbar />
             <div className="belowNav">
-            <h1 className="heading">about</h1>
+            <h1 className="purple heading">about</h1>
             <TextCard
                 alignment="left"
                 heading="who we are"

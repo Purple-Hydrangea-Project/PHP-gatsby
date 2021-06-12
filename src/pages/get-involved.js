@@ -20,7 +20,7 @@ export default function GetInvolved() {
           <p>We are currently accepting people on a rolling basis of 14 years of age or older who are interested in being a part of our cause!</p>
           {/* <br /><br /> */}
           <p>Interested in taking up this leadership advocacy role? Fill out the short application form below!</p>
-          <Button text="apply now!" link="/" />
+          <Button text="apply now!" link="https://docs.google.com/document/d/1QfzQugPCsrmRyuchHR4vDq5Edr7Goio0HjiWq8fzXmg/edit" />
         </div>
         <div className="right">
         <BubbleButtons icon={Marketing} text="Marketing" />
@@ -39,12 +39,12 @@ export default function GetInvolved() {
         <div className="middle">
           <h4>share your story</h4>
           <p>Submit a piece of artwork, journal entry, song lyrics, etc., that you believe conveys an aspect of your experience with mental health. These submissions will be featured on our website, social medias, and eventually our published book!</p>
-          <Button text="share here" />
+          <Button text="share here" link="https://docs.google.com/forms/d/e/1FAIpQLSe_kXXjnVsgltlP05F42UdIyG7P2piK_rXzUfF4IJ9I7XpDnw/viewform"/>
         </div>
         <div className="right">
           <h4>start a club</h4>
           <p>Help spread our message of mental health awareness for kids and teens to your school! Email us with the subject line "Interest in Starting a PHP Chapter" for more information.</p>
-          <Button text="contact us" />
+          <Button text="contact us" link="mailto:purplehydrangeaproject@gmail.com?subject=Interest%20in%20Starting%20a%20PHP%20Chapter"/>
         </div>
       </div>
       

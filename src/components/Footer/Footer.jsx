@@ -6,7 +6,7 @@ import Logo from '../../../static/circle_logo.png'
 const Footer = () => (
     <div className="footer">
         <div className="col first">
-            <Button text="donate" size="donate" />
+            <Button text="donate" size="donate" link="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NVPLRCAYXUMEE&source=url"/>
             The Purple Hydrangea Project
 is a 501(c)(3) nonprofit organization dedicated to raising mental health awareness in children and teens.
         </div>
