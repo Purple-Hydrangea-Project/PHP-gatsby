@@ -125,6 +125,27 @@
 }
 .table{
   display: table-row;
+}
+.blog-posts {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about {
+  .section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    .cards {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+  
 
 .homepage {
   .partners-section {
