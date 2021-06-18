@@ -1,7 +1,7 @@
 @import "./../main.scss";
-@import './../pages.scss';
+@import "./../pages.scss";
 
-.blogCard{  
+.blogCard {
   width: 26rem;
   background-color: #ffffff;
   margin: 2%;
@@ -9,34 +9,37 @@
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
   overflow: hidden;
   height: 32rem;
+  text-decoration: none;
 }
 
-.img{
-    height: 20rem;
-    margin: auto;
-  }
-      
-.blogCardMeta{
+.img {
+  height: 20rem;
+  margin: auto;
+}
+
+.blogCardMeta {
   padding: 2em;
+  text-decoration: none;
 }
 
-.excerpt{
-    margin: 1.5em 0 0 0;
-    font-style: italic;
+.excerpt {
+  margin: 1.5em 0 0 0;
+  font-style: italic;
+  padding-bottom: 4rem;
 }
-      
-.like{
+
+.like {
   font-weight: lighter;
   color: black;
 }
 
-.num{
-  font-size: .5em;
+.num {
+  font-size: 0.5em;
   font-weight: lighter;
-  float:right;
+  float: right;
 }
-.likes{
-  width: 10px;      
+.likes {
+  width: 10px;
 }
 
 .title {
