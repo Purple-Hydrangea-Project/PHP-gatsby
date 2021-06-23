@@ -53,16 +53,16 @@
 $montserrat: "Montserrat", sans-serif;
 
 //Colors
-$primary-purple: #ABA7DD;
-$landing-purple: #514B91;
-$accent-text-purple: #7D78BE;
+$primary-purple: #aba7dd;
+$landing-purple: #514b91;
+$accent-text-purple: #7d78be;
 $dark-text-purple: #181143;
-$pale-green: #8CC6C3;
+$pale-green: #8cc6c3;
 $dark-green: #348581;
 $white: #fff;
-$light-purple: #F1F1FC;
-$light-grey: #DEDEDE;
-$gray: #F7EFED;
+$light-purple: #f1f1fc;
+$light-grey: #dedede;
+$gray: #f7efed;
 
 //Grids
 
@@ -76,48 +76,130 @@ html {
   scroll-behavior: smooth;
 }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1.25;
+  line-height: 1.25;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 body {
@@ -144,10 +226,9 @@ body {
   @include respond(tab-port) {
     flex-direction: column;
   }
-  
 }
 
-.members{
+.members {
   padding: 0 15vw;
   margin: auto;
   @media screen and (min-width: 1400px) {
@@ -162,35 +243,34 @@ body {
   display: flex;
 }
 
-.blogcards{
+.blogcards {
   display: flex;
   flex-wrap: wrap;
 }
-h1{
+h1 {
   text-align: center;
   font-size: 4em;
-  font-weight: bold;;
-}
-
-.eventsHeading{
   font-weight: bold;
 }
-.purple{
+
+.eventsHeading {
+  font-weight: bold;
+}
+.purple {
   color: $landing-purple;
 }
 
-.belowNav{
+.belowNav {
   padding-top: 15vh !important;
 }
 
-iframe{
+iframe {
   padding: 5%;
 }
 
-.subheading{
+.subheading {
   font-size: 2em;
   font-weight: bold;
   text-align: center;
   padding-top: 2em;
 }
-
