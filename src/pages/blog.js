@@ -1,8 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import "../components/main.scss"
-import "../components/pages.scss"
 import { Footer, BlogCard, Navbar, Feature, RecentPosts } from "../components"
+import styles from "../components/Blog.module.scss"
 
 export default function Blog() {
   const data = useStaticQuery(
@@ -30,63 +29,12 @@ export default function Blog() {
     `
   )
 
-  const blogs = [
-    {
-      image: 'https://ichef.bbci.co.uk/news/1024/cpsprodpb/151AB/production/_111434468_gettyimages-1143489763.jpg',
-      title:"here's a blog guys",
-      excerpt:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      date: "4/10/2003",
-      likes: 50
-    },
-    {
-      image: 'https://ichef.bbci.co.uk/news/1024/cpsprodpb/151AB/production/_111434468_gettyimages-1143489763.jpg',
-      title:"two here's a blog guys",
-      excerpt:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      date: "4/10/2003",
-      likes: 50
-    },
-    {
-      image: 'https://ichef.bbci.co.uk/news/1024/cpsprodpb/151AB/production/_111434468_gettyimages-1143489763.jpg',
-      title:"three here's a blog guys",
-      excerpt:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      date: "4/10/2003",
-      likes: 50
-    },
-    {
-      image: 'https://ichef.bbci.co.uk/news/1024/cpsprodpb/151AB/production/_111434468_gettyimages-1143489763.jpg',
-      title:" four here's a blog guys",
-      excerpt:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      date: "4/10/2003",
-      likes: 50
-    },
-    {
-      image: 'https://ichef.bbci.co.uk/news/1024/cpsprodpb/151AB/production/_111434468_gettyimages-1143489763.jpg',
-      title:"five here's a blog guys",
-      excerpt:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      date: "4/10/2003",
-      likes: 50
-    },
-    {
-      image: 'https://ichef.bbci.co.uk/news/1024/cpsprodpb/151AB/production/_111434468_gettyimages-1143489763.jpg',
-      title:"six here's a blog guys",
-      excerpt:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      date: "4/10/2003",
-      likes: 50
-    },
-    {
-      image: 'https://ichef.bbci.co.uk/news/1024/cpsprodpb/151AB/production/_111434468_gettyimages-1143489763.jpg',
-      title:"seven here's a blog guys",
-      excerpt:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      date: "4/10/2003",
-      likes: 50
-    }
-  ]
-
   return (
-    <div className="blogListPage">
+    <div>
       <Navbar />
-        <div className="belowNav">
-          <Link to="/blog/change-through-will-within">
+      <div>
+        <Link to="/blog/change-through-will-within">
+          <a className={styles.link}>
             <Feature
               image="https://waypointrecoverycenter.com/wp-content/uploads/2019/06/The-Pink-Clouds-Dark-Side.jpg"
               title="Change through Will Within"
@@ -94,27 +42,27 @@ export default function Blog() {
               date="April 23, 2020"
               likes="10"
             />
-          </Link>
-        </div>
-      <RecentPosts events={blogs}/>
-      <div className="blogCardList">
+          </a>
+        </Link>
+      </div>
+
+      <div className={styles.blogCardList}>
         {data.allContentfulBlogPost.edges.map(edge => {
           return (
-            <>
-              <div className="f">
-                <Link className="blogCardLink" to={`/blog/${edge.node.slug}/`}>
+            <div key={edge.node.title} className={styles.cardItem}>
+              <Link to={`/blog/${edge.node.slug}/`}>
+                <a className={styles.link}>
                   <BlogCard
-                    className="blogCardCard"
                     image={edge.node.photo.file.url}
                     title={edge.node.title}
                     author={edge.node.author}
                     date={edge.node.datePublished}
-                    likes="50"
+                    likes=""
                     excerpt={edge.node.excerpt.excerpt}
                   />
-                </Link>
-              </div>
-            </>
+                </a>
+              </Link>
+            </div>
           )
         })}
       </div>

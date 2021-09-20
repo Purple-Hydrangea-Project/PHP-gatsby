@@ -1,42 +1,41 @@
 @import "./../main.scss";
 
-.Feature{
+.Feature {
+  width: 100%;
+  height: 96vh;
+  padding: 2% 5%;
+  display: flex;
+
+  a {
+    text-decoration: none;
+  }
+
+  .text {
+    align-self: flex-end;
     width: 100%;
-    height: 96vh;
-    padding: 2% 5%;
-    display: flex;
-
-    a {
-        text-decoration: none;
+    text-decoration: none;
+    h1 {
+      font-size: 3em;
+      text-align: start;
+      text-decoration: none;
     }
-    
-
-    .text{
-        align-self: flex-end;
-        width: 100%;
-        h1{
-            font-size: 3em;
-            text-align: start;
-            text-decoration: none;
-        }
-        h2, h3{
-            font-weight: normal;
-            line-height: 2em;
-            text-decoration: none;
-            color: black;
-        }
-
-        .num{
-            font-size: .5em;
-            font-weight: lighter;
-            float:right;
-            width: 20%;
-        
-            .likes{
-                width: 20px;      
-              }
-          }
+    h2,
+    h3 {
+      font-weight: normal;
+      line-height: 2em;
+      text-decoration: none;
+      color: black;
     }
 
-    
+    .num {
+      font-size: 0.5em;
+      font-weight: lighter;
+      float: right;
+      width: 20%;
+
+      .likes {
+        width: 20px;
+      }
+    }
+  }
 }

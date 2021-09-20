@@ -1,0 +1,17 @@
+@import "./main.scss";
+
+.link {
+  color: black;
+  text-decoration: none;
+}
+
+.blogCardList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cardItem {
+  padding: 24px;
+}
